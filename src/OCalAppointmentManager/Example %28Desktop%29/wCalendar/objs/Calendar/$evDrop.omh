@@ -1,0 +1,50 @@
+If pDragField().$name='Calendar'     ;; CHANGE_27OCT08_1 (added test for drag field, see Else below)
+	Do tmpList.$copydefinition(iEventsList)
+	;  copy the selected rows into a temp list
+	Do tmpList.$merge(iEventsList,kFalse,kTrue)
+	;  if we are moving rows (alt key NOT pressed), remove the selected rows from master list
+	If not(#ALT)
+		Do iEventsList.$remove(kListDeleteSelected)
+	End If
+	
+	;  swap our lists so we can use the access methods for the columns while we work on the temp list
+	Begin reversible block
+		Set current list iEventsList
+	End reversible block
+	Swap lists tmpList
+	
+	;  get the drop date and update the dates in the temp list (preserve times by using ddif in number of days)
+	Calculate dt1 as pDropDate
+	For iEventsList.$line from 1 to iEventsList.$linecount step 1
+		Do method $getEventStartDateTime Returns dt2
+		Do method $getEventEndDateTime Returns dt3
+		If refCalendar.$viewmode     ;; CHANGE_2014_04_16__1
+			Calculate dif as ddiff(kMinute,dt2,dt1)     ;; in this mode we include event and drop times as we can change event times with drag&drop
+			;  advance our drop date so we place one event after the next when dropping multiple events in day mode
+			;  we advance the drop date by the duration of the current event
+			Calculate dt1 as dadd(kMinute,ddiff(kMinute,dt2,dt3),dt1)
+		Else
+			Calculate dif as ddiff(kMinute,dat(dt2,"DMY"),dat(dt1,"DMY"))     ;; strip times from dates as we are interested in days only in this mode
+		End If
+		Do method $setEventStartDateTime (dadd(kMinute,dif,dt2),kFalse,kFalse)
+		Do method $setEventEndDateTime (dadd(kMinute,dif,dt3),kFalse,kFalse)
+		;  update all-day flag in case we are moving event in or out of all-day pane
+		Do method $setEventAllDay (pDropAllDay,kFalse,kFalse)
+	End For
+	
+	;  swap lists back again
+	Swap lists tmpList
+	
+	;  merge the updated temp list back into master list and select new lines
+	Calculate cnt as iEventsList.$linecount     ;; remember line count so we can select all new rows
+	Do iEventsList.$merge(tmpList,kFalse,kFalse)
+	;  select the lines
+	Do iEventsList.$sendall($ref.$selected.$assign($ref.$ident>cnt))
+	;  sort our master list by date and time, set the current line to first selected line and redraw the calendar
+	Do method sortList     ;; 2009_12_14_CHANGE_1
+	Do iEventsList.$first(kTrue)
+	Do $cfield.$redraw()
+	Do method updateEventFields
+Else
+	;  deal with drags from other sources
+End If

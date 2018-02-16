@@ -1,0 +1,1078 @@
+[
+	{
+		"name": "$--- initialization ---",
+		"ident": 11,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "ltBlue",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "rgb(196,196,255)"
+			},
+			{
+				"name": "ltGreen",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "rgb(196,255,196)"
+			},
+			{
+				"name": "ltPurple",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "rgb(255,196,255)"
+			},
+			{
+				"name": "ltRed",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "rgb(255,196,196)"
+			}
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 2,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$initialize",
+		"ident": 12,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "dataReference",
+				"order": 3,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "holidays",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "refSmallMonths",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$getCalendar",
+		"ident": 4,
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$--- event adding/deleting ---",
+		"ident": 10,
+		"order": 6,
+		"desc": "methods for adding/removing events",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$addEvent",
+		"ident": 5,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pIcon",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pText",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			},
+			{
+				"name": "pStartDateTime",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pEndDateTime",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0,
+				"param": 4
+			},
+			{
+				"name": "pFillColor",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 5
+			},
+			{
+				"name": "pTextColor",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 6
+			},
+			{
+				"name": "pLayers",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 7
+			},
+			{
+				"name": "pAllDay",
+				"order": 9,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 8
+			},
+			{
+				"name": "pRedraw",
+				"order": 7,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 9,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$deleteEvent",
+		"ident": 6,
+		"order": 8,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$--- event property setting ---",
+		"ident": 13,
+		"order": 9,
+		"desc": "the methods that follow set the event property for the current line or selected lines and redraw Syntax: $xxx(NewValue,Selected,Redraw)",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$setEventIcon",
+		"ident": 3,
+		"order": 10,
+		"pvardefs": [
+			{
+				"name": "pIcon",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventText",
+		"ident": 0,
+		"order": 11,
+		"pvardefs": [
+			{
+				"name": "pText",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventStartDateTime",
+		"ident": 15,
+		"order": 12,
+		"pvardefs": [
+			{
+				"name": "pDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "date",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "time",
+				"order": 5,
+				"type": "kDate",
+				"subtype": "kTime",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setEventStartDate",
+		"ident": 16,
+		"order": 13,
+		"pvardefs": [
+			{
+				"name": "pDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventStartTime",
+		"ident": 17,
+		"order": 14,
+		"pvardefs": [
+			{
+				"name": "pTime",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kTime",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventEndDateTime",
+		"ident": 18,
+		"order": 15,
+		"pvardefs": [
+			{
+				"name": "pDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "date",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "time",
+				"order": 5,
+				"type": "kDate",
+				"subtype": "kTime",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setEventEndDate",
+		"ident": 19,
+		"order": 16,
+		"pvardefs": [
+			{
+				"name": "pDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventEndTime",
+		"ident": 21,
+		"order": 17,
+		"pvardefs": [
+			{
+				"name": "pTime",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kTime",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventAllDay",
+		"ident": 41,
+		"order": 18,
+		"pvardefs": [
+			{
+				"name": "pAllDay",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventTooltip",
+		"ident": 22,
+		"order": 19,
+		"pvardefs": [
+			{
+				"name": "pText",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventLayers",
+		"ident": 23,
+		"order": 20,
+		"pvardefs": [
+			{
+				"name": "pLayers",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventTextColor",
+		"ident": 24,
+		"order": 21,
+		"pvardefs": [
+			{
+				"name": "pColor",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventFillColor",
+		"ident": 25,
+		"order": 22,
+		"pvardefs": [
+			{
+				"name": "pColor",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pSelected",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setEventItem",
+		"ident": 20,
+		"order": 23,
+		"pvardefs": [
+			{
+				"name": "pColumnName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pValue",
+				"order": 2,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pSelected",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue"
+			},
+			{
+				"name": "pRedraw",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4,
+				"initval": "kTrue"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "ln",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$--- event property getting ---",
+		"ident": 26,
+		"order": 24,
+		"desc": "the methods that follow return the event property for the current line",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$getEventIcon",
+		"ident": 27,
+		"order": 25,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventText",
+		"ident": 29,
+		"order": 26,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventStartDateTime",
+		"ident": 30,
+		"order": 27,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "d",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "t",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kTime",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$getEventStartDate",
+		"ident": 31,
+		"order": 28,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventStartTime",
+		"ident": 32,
+		"order": 29,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventEndDateTime",
+		"ident": 33,
+		"order": 30,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventEndDate",
+		"ident": 34,
+		"order": 31,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventEndTime",
+		"ident": 35,
+		"order": 32,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventAllDay",
+		"ident": 40,
+		"order": 33,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventTooltip",
+		"ident": 36,
+		"order": 34,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventLayers",
+		"ident": 37,
+		"order": 35,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventTextColor",
+		"ident": 38,
+		"order": 36,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventFillColor",
+		"ident": 39,
+		"order": 37,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getEventItem",
+		"ident": 28,
+		"order": 38,
+		"pvardefs": [
+			{
+				"name": "pColumnName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "--- private ---",
+		"ident": 14,
+		"order": 39,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "updateEventFields",
+		"ident": 7,
+		"order": 40,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "clearEventFields",
+		"ident": 8,
+		"order": 41,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "showMessage",
+		"ident": 9,
+		"order": 42,
+		"pvardefs": [
+			{
+				"name": "pMessage",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "setButtons",
+		"ident": 42,
+		"order": 43,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "first",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "last",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			}
+		]
+	},
+	{
+		"name": "sortList",
+		"ident": 43,
+		"order": 44,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "advanceDate",
+		"ident": 44,
+		"order": 45,
+		"pvardefs": [
+			{
+				"name": "pBack",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "prevCurrDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "refSmallMonths",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	}
+]

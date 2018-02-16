@@ -1,0 +1,23 @@
+{
+	"ident": 1026,
+	"order": 16387,
+	"objtype": "kRect3D",
+	"properties": {
+		"backcolor": "RGB(221,255,255)",
+		"backpattern": 1,
+		"bordercolor": "kColorFrame",
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"effect": "kBorderChisel",
+		"fieldstyle": "",
+		"forecolor": "kColorForeFill",
+		"height": 19,
+		"left": 30,
+		"linestyle": 1,
+		"objlink": 0,
+		"top": 29,
+		"userinfo": "",
+		"visible": true,
+		"width": 100
+	}
+}

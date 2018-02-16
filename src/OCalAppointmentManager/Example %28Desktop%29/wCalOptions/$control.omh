@@ -1,0 +1,6 @@
+On evClick
+	If pos("btnColor_",$cobj().$name)=1
+		;  handle click on color buttons
+		Calculate property as mid($cobj().$name,10,255)
+		Calculate refCalendar.$[property] as $cobj.$contents
+	End If

@@ -1,0 +1,3 @@
+If pCalendar.$dayviewalldayheight>pMinHeight
+	Calculate pMinHeight as pCalendar.$dayviewalldayheight
+End If

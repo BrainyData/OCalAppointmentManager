@@ -1,0 +1,52 @@
+Set reference refCalendar to pFRefCalendar
+;  build lists
+
+;  day start list now allows days start times every 15 minutes between 5am and 10am
+Do iDayStartsAt.$define(iText)
+For loop from 300 to 600 step 15
+	Do iDayStartsAt.$add(con(tim(loop,"H:N"),"AM"))
+End For
+Calculate iDayStartsAt.$line as (refCalendar.$dayviewdaystart-300)/15+1
+
+;  day end list now supports end times every 15 minutes between 14:00 and 19:00
+Do iDayEndsAt.$define(iText)
+For loop from 840 to 1140 step 15
+	Do iDayEndsAt.$add(con(tim(loop,"H:N"),"PM"))
+End For
+Calculate iDayEndsAt.$line as (refCalendar.$dayviewdayend-840)/15+1
+
+Do iShowHours.$define(iText)
+For loop from 6 to 24 step 1
+	Do iShowHours.$add(loop)
+End For
+Calculate iShowHours.$line as refCalendar.$dayviewhoursvisible-5
+
+Do iDaysInDayPlan.$define(iText)
+For loop from 30 to 180 step 30
+	Do iDaysInDayPlan.$add(loop)
+End For
+Calculate iDaysInDayPlan.$line as refCalendar.$daysInDayPlanView/30
+
+Do iWeekStart.$define(iText)
+Calculate dt as "3DEC2006"     ;; it's a sunday
+For loop from 0 to 6 step 1
+	Do iWeekStart.$add(dname(kDay,dadd(kDay,loop,dt)))     ;; Get day name from Omnis
+End For
+Calculate iWeekStart.$line as refCalendar.$firstday-11     ;; Omnis day constants start at 12 (12=kSunday,...)
+
+;  load properties from calendar
+Calculate refHFontSize.$val as $cinst.$getFontSize(refCalendar.$headingstyle)
+Calculate refDFontSize.$val as $cinst.$getFontSize(refCalendar.$fieldstyle)
+Calculate refDVMinuteScale.$val as refCalendar.$dayviewminutescale/5     ;; our slider increments 5 minutes per notch
+Calculate refDVTimeScale.$val as refCalendar.$dayviewtimescale/5     ;; our slider increments 5 minutes per notch
+
+;  load weekend days
+Calculate wedDays as refCalendar.$weekenddays
+For loop from 1 to 7 step 1
+	Calculate [con('iWED',loop)] as mid(wedDays,loop,1)='1'
+End For
+
+;  set-up color buttons
+Do method setColorButtons
+;  enable/disable fields
+Do method setButtons

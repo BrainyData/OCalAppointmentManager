@@ -1,0 +1,148 @@
+{
+	"classtype": "kWindow",
+	"internalversion": 4,
+	"designtaskname": "Startup_Task",
+	"nextident": 1049,
+	"lastgroupident": 0,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "iAllDayHeightChanged",
+			"order": 5,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iDate",
+			"order": 2,
+			"type": "kDate",
+			"subtype": "kDatetime",
+			"sublen": 1
+		},
+		{
+			"name": "iDayMode",
+			"order": 3,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0
+		},
+		{
+			"name": "iEventsListRef",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000,
+			"desc": "this will contain a text based special reference to the callers list (created by Calendar Library.$makedatareference())"
+		},
+		{
+			"name": "iMinAllDayHeight",
+			"order": 4,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0,
+			"desc": "used to size all all-day height panes the same, see $set and evAllDayHeight"
+		},
+		{
+			"name": "iSourceCal",
+			"order": 6,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"desc": "Calendar control"
+		},
+		{
+			"name": "iSourceInst",
+			"order": 8,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"desc": "Sub-window instance"
+		},
+		{
+			"name": "iSourceWin",
+			"order": 7,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"desc": "Window that contains the celndar sub-window"
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"alpha": 255,
+		"backcolor": "kColor3DFace",
+		"backgroundskin": 0,
+		"backgroundskinalign": "kPALtopLeft",
+		"backgroundtheme": "kBGThemeWindow",
+		"backpattern": 0,
+		"bringinfront": false,
+		"clickbehind": true,
+		"closebox": true,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"contextmenu": "",
+		"createdate": "2009-03-26 15:09:17",
+		"desc": "",
+		"dockingedge": "kBorderChisel",
+		"dropmode": "kAcceptNone",
+		"edgefloat": "kEFnone",
+		"editor": "",
+		"editordata": "",
+		"effect": "kBorderNone",
+		"enablemenuandtoolbars": true,
+		"external": true,
+		"forecolor": "kColor3DFace",
+		"growbox": false,
+		"hasmenus": false,
+		"hasstatusbar": false,
+		"height": 489,
+		"helpbutton": false,
+		"helpfile": 0,
+		"horzgrid": 8,
+		"horzscroll": false,
+		"inheritedorder": 1,
+		"issubwindow": false,
+		"issupercomponent": false,
+		"keepclicks": true,
+		"left": 796,
+		"menuedge": "kBorderChisel",
+		"menunames": "",
+		"minimizebox": false,
+		"minimizeiconid": 2006,
+		"moddate": "2018-02-09 13:58:50",
+		"modelessdata": true,
+		"showascheckedout": false,
+		"showcommands": false,
+		"showgrid": false,
+		"showtitle": false,
+		"sizetogrid": false,
+		"startfield": 0,
+		"statusbarpos": "kSBPosBottom",
+		"statusedge": "kBorderChisel",
+		"style": "kTitle",
+		"title": "",
+		"toolbarnames": "",
+		"toolbaroptions": "kTBOptionNone",
+		"toolbarpos": "kDockingAreaNone",
+		"top": 138,
+		"userinfo": "",
+		"usesheets": false,
+		"version": "",
+		"vertgrid": 8,
+		"vertscroll": false,
+		"width": 739,
+		"zoombox": false
+	},
+	"statusbar": {
+		"properties": {
+			"fieldstyle": "",
+			"font": 1,
+			"fontsize": 0,
+			"helppane": 0
+		}
+	}
+}

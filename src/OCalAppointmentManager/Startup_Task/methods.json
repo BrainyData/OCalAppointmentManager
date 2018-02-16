@@ -1,0 +1,79 @@
+[
+	{
+		"name": "$construct",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "itemref",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 1,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "checkExternals",
+		"ident": 2,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "message",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "checkExternalVersion",
+		"ident": 3,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "is_new_format",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "required_studio_version",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "required_version",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]

@@ -1,0 +1,5 @@
+If pShow
+	Calculate refCalendar.$columntime as iColumnTime
+Else
+	Calculate refCalendar.$columntime as ''
+End If

@@ -1,0 +1,2 @@
+On evClick
+	Calculate refCalendar.$daysInDayPlanView as pLineNumber*30

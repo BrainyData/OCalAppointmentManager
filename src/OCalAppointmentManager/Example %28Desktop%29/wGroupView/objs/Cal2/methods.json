@@ -1,0 +1,61 @@
+[
+	{
+		"name": "$event",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "cnt",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "dif",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "dt1",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "dt2",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "dt3",
+				"order": 6,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "row",
+				"order": 7,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "tmpList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	}
+]

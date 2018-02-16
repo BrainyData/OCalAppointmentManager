@@ -1,0 +1,29 @@
+On evVScroll
+	Do method evVScroll ($cfield)
+	
+On evAllDayHeight
+	Do method evAllDayHeight ($cfield)
+	
+On evClick
+	Do method evClick ($cfield)
+	
+On evCanDrop
+	Do method evCanDrop ($cfield,pDragField,pDragType,pDragValue)
+	
+On evCreateEvent
+	Do method evCreateEvent ($cfield,pStartDate,pEndDate,pAllDay)
+	
+On evDateRClick
+	Do method evDateRClick ($cfield,pCurrentDate,pAllDay)
+	
+On evDeleteEvent
+	Do method evDeleteEvent ($cfield)
+	
+On evDrop
+	Do method evDrop ($cfield,pDragField,pDragType,pDragValue)
+	
+On evResizeEventEnd
+	Do method evResizeEventEnd ($cfield)
+	
+On evResizeEventStart
+	Do method evResizeEventStart ($cfield)

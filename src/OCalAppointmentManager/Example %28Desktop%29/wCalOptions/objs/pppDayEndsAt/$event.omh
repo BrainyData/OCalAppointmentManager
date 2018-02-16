@@ -1,0 +1,2 @@
+On evClick
+	Calculate refCalendar.$dayviewdayend as (pLineNumber-1)*15+840

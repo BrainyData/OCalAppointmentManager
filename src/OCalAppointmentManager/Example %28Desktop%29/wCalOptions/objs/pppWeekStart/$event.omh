@@ -1,0 +1,3 @@
+On evClick
+	Calculate refCalendar.$firstday as pLineNumber+11
+	Calculate refCalendar.$dayviewdate as #NULL     ;; reset day view CHANGE_2014_08_18__1

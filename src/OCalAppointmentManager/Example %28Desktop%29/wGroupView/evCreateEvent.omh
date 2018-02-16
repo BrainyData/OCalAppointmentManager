@@ -1,0 +1,9 @@
+
+Do Calendar Library.$disablescreenupdates()
+
+Do iSourceWin.$setGroup(pFieldRef.$order)
+Do iSourceCal.$evCreateEvent(pStartDate,pEndDate,pAllDay)
+Do method redrawAll
+Do method setAllDayHeight
+
+Do Calendar Library.$enablescreenupdates()

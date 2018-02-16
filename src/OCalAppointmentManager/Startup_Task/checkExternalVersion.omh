@@ -1,0 +1,30 @@
+;  check component version number     ;; CHANGE_V170
+;  for full details, please see technical note TN0022 at
+;  http://www.brainydata.co.uk/supportpublic/technotes.htm
+
+;  get the studio major and minor version digits using sys(1)
+Calculate required_studio_version as con(mid(sys(1),1,1),mid(sys(1),3,1))
+;  apply the studio compatibility table
+If (required_studio_version="60"|required_studio_version="61")     ;; nothing to change
+	Calculate required_studio_version as "60"
+Else If (required_studio_version>="52")
+	Calculate required_studio_version as "52"
+Else If (required_studio_version>="50")
+	Calculate required_studio_version as "50"
+Else If (required_studio_version>="43")
+	Calculate required_studio_version as "43"
+End If
+
+;  now we can calculate our required version for OCal
+Calculate required_version as con(required_studio_version,".181")     ;; CHANGE_2014_04_16__1
+
+;  check Studio compatibility and
+;  check minimum required version for this application
+If is_new_format&(int(required_version)<>int($components.Calendar Library.$version))
+	Quit method "This OCal component is incompatible with this version of Studio. Please make sure you install the correct DLL for tihs version of Studio."
+Else If (required_version>$components.Calendar Library.$version)
+	Quit method "A newer version of OCal is required for this application. Please install version 1.7.0 or better."
+End If
+
+;  we are OK, return an empty error string
+Quit method ''

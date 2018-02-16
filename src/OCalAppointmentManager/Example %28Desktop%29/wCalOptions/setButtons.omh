@@ -1,0 +1,14 @@
+Calculate $cinst.$objs.NoEventBackground.$enabled as not(refCalendar.$roundedboxes)
+Calculate $cinst.$objs.NoEventBorder.$enabled as refCalendar.$roundedboxes
+
+;  Calculate $cinst.$objs.btnColorTitle.$contents as refCalendar.$titlecolor
+;  Calculate $cinst.$objs.btnColorTitleText.$contents as refCalendar.$titletextcolor
+;  Calculate $cinst.$objs.btnColorHeading.$contents as refCalendar.$headingcolor
+;  Calculate $cinst.$objs.btnColorHeadingText.$contents as refCalendar.$headingtextcolor
+;  Calculate $cinst.$objs.btnColorAllDay.$contents as refCalendar.$dayviewdeadcolumncolor
+;  Calculate $cinst.$objs.btnColorAllDayDivider.$contents as refCalendar.$dayviewdividercolor
+;  Calculate $cinst.$objs.btnColorTimeColumn.$contents as refCalendar.$dayviewtimecolumncolor
+;
+;  Calculate $cinst.$objs.btnColorTodays.$contents as refCalendar.$todayscolor
+;  Calculate $cinst.$objs.btnColorTodaysText.$contents as refCalendar.$todaystextcolor
+;  Calculate $cinst.$objs.btnColorCurrDay.$contents as refCalendar.$currdaycolor

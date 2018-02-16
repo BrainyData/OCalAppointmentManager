@@ -1,0 +1,5 @@
+Set reference ivCalendarControl to pCalendarControl
+Do $cinst.$useseconds.$assign(kTrue)
+Do $cinst.$timervalue.$assign(60)
+Do $cinst.$timer
+Do $cinst.$starttimer

@@ -1,0 +1,7 @@
+Do method checkExternals Returns #F
+If flag true
+	Install menu mMain
+	Open window instance wExample/CEN
+Else
+	Close library {[$clib().$name]}
+End If

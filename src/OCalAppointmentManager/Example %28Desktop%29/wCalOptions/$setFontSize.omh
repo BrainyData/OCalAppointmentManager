@@ -1,0 +1,10 @@
+Switch sys(6)
+	Case 'W','N'
+		Calculate $clib.$fieldstyles.[pStyleName].$platforms.kMSWindows.$fontsize as pValue
+	Case 'M'
+		Calculate $clib.$fieldstyles.[pStyleName].$platforms.kMacintosh.$fontsize as pValue
+	Case 'U'
+		Calculate $clib.$fieldstyles.[pStyleName].$platforms.kUnix.$fontsize as pValue
+	Case 'X'
+		Calculate $clib.$fieldstyles.[pStyleName].$platforms.kMacOSX.$fontsize as pValue
+End Switch

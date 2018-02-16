@@ -1,0 +1,2 @@
+Do iSourceWin.$setIcon(pIconID)
+Do method redrawAll

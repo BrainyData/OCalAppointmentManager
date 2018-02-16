@@ -1,0 +1,16 @@
+;  public method for assigning the date and event list
+
+;  to avoid flashy redraws while we notationaly update 7 controls
+;  we disable the calendar librarie's redraws, when we call
+;  $enablescreenupdates() below, all the controls that required it will be updated in one go.
+Do Calendar Library.$disablescreenupdates()
+
+;  now we apply our new data
+Calculate iEventsListRef as pSourceListRef
+Do method setDate (pDate)     ;; sets the dates in all our controls
+
+;  now update all-day height
+Do method setAllDayHeight
+
+;  now we can enable updates which will update now all controls that require it
+Do Calendar Library.$enablescreenupdates()

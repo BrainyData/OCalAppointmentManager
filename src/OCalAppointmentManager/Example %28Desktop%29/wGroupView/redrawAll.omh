@@ -1,0 +1,5 @@
+If pExclude
+	Do $cinst.$objs.$sendall($ref.$redraw(kTrue,kFalse),$ref.$componentctrl="Calendar Control"&$ref.$ident<>pExclude.$ident)
+Else
+	Do $cinst.$objs.$sendall($ref.$redraw(kTrue,kFalse),$ref.$componentctrl="Calendar Control")
+End If

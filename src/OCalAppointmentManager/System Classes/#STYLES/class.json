@@ -1,0 +1,1277 @@
+{
+	"classtype": "kSystemtable",
+	"internalversion": 1,
+	"nextident": 16,
+	"properties": {
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2006-12-07 23:34:12",
+		"desc": "",
+		"external": false,
+		"moddate": "2018-02-09 12:00:25",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	},
+	"styles": [
+		{
+			"name": "CtrlLabel",
+			"ident": 1,
+			"properties": {
+				"desc": "Standard Background Label Object",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": true,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 15,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 15,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 9,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 15,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemeSystem",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 15,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlPushButton",
+			"ident": 2,
+			"properties": {
+				"desc": "Standard Push Button Object",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 9,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemePushButton",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlCheckBox",
+			"ident": 3,
+			"properties": {
+				"desc": "Standard Check Box",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 9,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemeApplication",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlEditText",
+			"ident": 4,
+			"properties": {
+				"desc": "Standard Edit Text Object",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": true,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderCtrlEdit",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderCtrlEdit",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 9,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderCtrlEdit",
+						"fontname": "ThemeSmallSystem",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeControl",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorWindowText"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlSubWindow",
+			"ident": 5,
+			"properties": {
+				"desc": "Standard Sub Window Object",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": true,
+				"hasfontname": false,
+				"hasfontsize": false,
+				"hasfontstyle": false,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlPopupList",
+			"ident": 6,
+			"properties": {
+				"desc": "Standard Popup List Object",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 9,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemePushButton",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Tahoma",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				}
+			]
+		},
+		{
+			"name": "CalSmallTitle",
+			"ident": 7,
+			"properties": {
+				"desc": "Title for small calendar",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 10,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CalSmallHeader",
+			"ident": 8,
+			"properties": {
+				"desc": "Day Headers for small calendar",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 10,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CalSmallMain",
+			"ident": 9,
+			"properties": {
+				"desc": "Main style for small calendar",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 10,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 7,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 7,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 7,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CalTitle",
+			"ident": 10,
+			"properties": {
+				"desc": "Title for main calendar",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 14,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 14,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 18,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 14,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CalHeader",
+			"ident": 11,
+			"properties": {
+				"desc": "Day Headers for main calendar",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 7,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 11,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kBold",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CalMain",
+			"ident": 12,
+			"properties": {
+				"desc": "Main style for main calendar",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 11,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 8,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CalGroups",
+			"ident": 13,
+			"properties": {
+				"desc": "Style for groups",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 10,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 10,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 13,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Arial",
+						"fontsize": 10,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "OMNISweb",
+			"ident": 14,
+			"properties": {
+				"desc": "Web Component",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": false,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": false,
+				"hasforecolor": false,
+				"hastextcolor": false
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Omnis Windows System",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemeSmallSystem",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeNone",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Omnis Windows System",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CtrlRadioButton",
+			"ident": 15,
+			"properties": {
+				"desc": "Standard Radio Button",
+				"hasalign": false,
+				"hasbackcolor": false,
+				"hasbackgroundtheme": true,
+				"hasbackpattern": false,
+				"hasbordercolor": false,
+				"haseffect": false,
+				"hasfontname": true,
+				"hasfontsize": true,
+				"hasfontstyle": true,
+				"hasforecolor": false,
+				"hastextcolor": true
+			},
+			"platforms": [
+				{
+					"name": "kMSWindows",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Omnis Windows System",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kUnix",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "-adobe-helvetica",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				},
+				{
+					"name": "kmacOS",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "ThemeApplication",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "RGB(0,0,0)"
+					}
+				},
+				{
+					"name": "kJavaScript",
+					"properties": {
+						"align": "kLeftJst",
+						"backcolor": "RGB(0,0,0)",
+						"backgroundtheme": "kBGThemeParent",
+						"backpattern": 0,
+						"bordercolor": "RGB(0,0,0)",
+						"effect": "kBorderNone",
+						"fontname": "Omnis Windows System",
+						"fontsize": 0,
+						"fontstyle": "kPlain",
+						"forecolor": "RGB(0,0,0)",
+						"textcolor": "kColorBtnText"
+					}
+				}
+			]
+		}
+	]
+}

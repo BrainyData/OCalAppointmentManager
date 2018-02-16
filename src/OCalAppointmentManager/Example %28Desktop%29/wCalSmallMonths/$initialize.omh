@@ -1,0 +1,4 @@
+;  initialize the small months subwindow
+Set reference refCalendar to $cwind.$getCalendar
+Do method $setDate     ;; by default set date to today
+Calculate $ctarget as $cinst.$objs.Cal2

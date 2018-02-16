@@ -1,0 +1,2 @@
+On evClick
+	Calculate refCalendar.$dayviewhoursvisible as pLineNumber+5

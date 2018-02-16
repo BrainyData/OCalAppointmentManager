@@ -1,0 +1,3 @@
+On evNewValue
+	Do $cinst.$setFontSize(refCalendar.$headingstyle,pNewVal)
+	Calculate refCalendar.$headingfontsize as pNewVal     ;; force calendar to reload style

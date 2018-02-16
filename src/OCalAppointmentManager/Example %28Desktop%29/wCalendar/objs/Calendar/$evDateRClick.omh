@@ -1,0 +1,5 @@
+;  right-click on an day, pCurrentDate = date & time clicked on
+Do method updateEventFields
+If pFieldRef.$mouseevent>0
+	Popup menu mCalContextEvents
+End If

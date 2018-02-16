@@ -1,0 +1,26 @@
+;  event list item clicked
+;  check if the current event date is outside the visible date range
+;  Calculate dt1 as refCalendar.$dayviewdate
+;  Calculate dt2 as dadd(kDay,refCalendar.$dayviewdaycount-1,dt1)
+;  Calculate dt3 as $cinst.$getEventStartDateTime
+;  If dt3<dt1|dt3>dt2
+;  Calculate refCalendar.$currday as $cinst.$getEventStartDateTime     ;; this will change the view if event falls outside current view range
+;  Else
+;  Calculate refCalendar.$currday as pClickDate
+;  End If
+;  If refCalendar.$currday<dt1|refCalendar.$currday>dt2
+;  Calculate refCalendar.$dayviewdate as #NULL
+;  End If
+
+;  20090522_CHANGE_1     ;; we just simply set the current day now
+If iEventsList.$line     ;; 20090522_CHANGE_1 begins
+	Do Calendar Library.$disablescreenupdates()
+	Calculate refCalendar.$currday as pClickDate
+	Calculate refCalendar.$dayviewdate as #NULL
+	Do Calendar Library.$enablescreenupdates()
+	Do method showMessage ("Right-click for event options")
+Else
+	Do method showMessage ("Double-click to open Group Window")
+End If     ;; 20090522_CHANGE_1 ends
+
+Do method updateEventFields

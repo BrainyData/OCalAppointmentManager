@@ -1,0 +1,27 @@
+
+Switch iCurrView
+	
+	Case "Day"
+		;  advance a day at a time
+		Calculate prevCurrDate as refCalendar.$currday     ;; remember previous current date as it may be changed to $dayviewdate when it falls outside the valid range after assigning $dayviewdate
+		Calculate refCalendar.$dayviewdate as dadd(kDay,pick(pBack,1,-1),refCalendar.$dayviewdate)
+		Calculate refCalendar.$currday as dadd(kDay,pick(pBack,1,-1),prevCurrDate)
+		
+	Case "List","Week","Fortnight","DayPlan"
+		;  advance a week at a time
+		Calculate prevCurrDate as refCalendar.$currday     ;; remember previous current date as it may be changed to $dayviewdate when it falls outside the valid range after assigning $dayviewdate
+		Calculate refCalendar.$dayviewdate as dadd(kDay,pick(pBack,7,-7),refCalendar.$dayviewdate)
+		Calculate refCalendar.$currday as dadd(kDay,pick(pBack,7,-7),prevCurrDate)
+		
+	Case "Month"
+		;  advance a month at a time
+		Calculate refCalendar.$currday as dadd(kMonth,pick(pBack,1,-1),refCalendar.$currday)
+		
+	Case "Year"
+		;  advance a year at a time
+		Calculate refCalendar.$currday as dadd(kYear,pick(pBack,1,-1),refCalendar.$currday)
+		
+End Switch
+
+Do $cwind.$getSmallMonths Returns refSmallMonths
+Do refSmallMonths.$setDate(refCalendar.$currday)

@@ -1,0 +1,2 @@
+Do iSourceCal.$evResizeEventEnd(pFieldRef.$dropdate)
+Do pFieldRef.$redraw()

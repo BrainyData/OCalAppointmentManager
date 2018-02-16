@@ -1,0 +1,3 @@
+Calculate iGroupList.$line as pGroupNumber
+Do $cinst.$objs.GroupList.$setExceptions()
+Do $cinst.$objs.GroupList.$redraw()

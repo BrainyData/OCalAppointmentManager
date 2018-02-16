@@ -1,0 +1,35 @@
+{
+	"classtype": "kTask",
+	"internalversion": 2,
+	"tvardefs": [
+		{
+			"name": "tvIsStudio4",
+			"order": 1,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "mid(sys(1),1,1)>=4"
+		}
+	],
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2006-12-07 23:34:12",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": false,
+		"issupercomponent": false,
+		"moddate": "2018-02-09 12:31:15",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

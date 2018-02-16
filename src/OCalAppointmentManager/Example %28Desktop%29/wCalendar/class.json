@@ -1,0 +1,247 @@
+{
+	"classtype": "kWindow",
+	"internalversion": 3,
+	"designtaskname": "Startup_Task",
+	"nextident": 1061,
+	"lastgroupident": 0,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "btnViewDay",
+			"order": 11,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.btnViewDay"
+		},
+		{
+			"name": "btnViewDayPlan",
+			"order": 14,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.btnViewDayPlan"
+		},
+		{
+			"name": "btnViewFortnight",
+			"order": 13,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.btnViewFortnight"
+		},
+		{
+			"name": "btnViewList",
+			"order": 19,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.btnViewList",
+			"desc": "CHANGE_2014_04_16__1 new button"
+		},
+		{
+			"name": "btnViewMonth",
+			"order": 18,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.btnViewMonth"
+		},
+		{
+			"name": "btnViewWeek",
+			"order": 12,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.btnViewWeek"
+		},
+		{
+			"name": "btnViewYear",
+			"order": 20,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.btnViewYear",
+			"desc": "CHANGE_2014_06_20__1 new button"
+		},
+		{
+			"name": "iColumn",
+			"order": 7,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iColumnIcon",
+			"order": 6,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iColumnTime",
+			"order": 8,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCurrentTime",
+			"order": 21,
+			"type": "kObjectref",
+			"subtype": "wCalCurrentTime",
+			"sublen": 0
+		},
+		{
+			"name": "iCurrView",
+			"order": 16,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000,
+			"initval": "\"Week\""
+		},
+		{
+			"name": "iDaysInDayPlanView",
+			"order": 15,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0,
+			"initval": "30"
+		},
+		{
+			"name": "iEvAllDay",
+			"order": 10,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iEvDateEnd",
+			"order": 5,
+			"type": "kDate",
+			"subtype": "kDatetime",
+			"sublen": 0
+		},
+		{
+			"name": "iEvDateStart",
+			"order": 2,
+			"type": "kDate",
+			"subtype": "kDatetime",
+			"sublen": 0
+		},
+		{
+			"name": "iEventsList",
+			"order": 1,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iEvText",
+			"order": 3,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iEvTooltip",
+			"order": 9,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "refCalendar",
+			"order": 4,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.Calendar"
+		},
+		{
+			"name": "refSpacer",
+			"order": 17,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.Spacer"
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"alpha": 255,
+		"backcolor": "kColor3DFace",
+		"backgroundskin": 0,
+		"backgroundskinalign": "kPALtopLeft",
+		"backgroundtheme": "kBGThemeWindow",
+		"backpattern": 0,
+		"bringinfront": false,
+		"clickbehind": true,
+		"closebox": true,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"contextmenu": "",
+		"createdate": "2006-12-07 23:34:32",
+		"desc": "Main Calendar Subwindow",
+		"dockingedge": "kBorderChisel",
+		"dropmode": "kAcceptNone",
+		"edgefloat": "kEFnone",
+		"editor": "",
+		"editordata": "",
+		"effect": "kBorderNone",
+		"enablemenuandtoolbars": true,
+		"external": true,
+		"forecolor": "kColor3DFace",
+		"growbox": true,
+		"hasmenus": false,
+		"hasstatusbar": false,
+		"height": 683,
+		"helpbutton": false,
+		"helpfile": 0,
+		"horzgrid": 8,
+		"horzscroll": false,
+		"inheritedorder": 1,
+		"issubwindow": false,
+		"issupercomponent": false,
+		"keepclicks": true,
+		"left": 286,
+		"menuedge": "kBorderChisel",
+		"menunames": "",
+		"minimizebox": false,
+		"minimizeiconid": 2006,
+		"moddate": "2018-02-09 13:52:27",
+		"modelessdata": true,
+		"showascheckedout": false,
+		"showcommands": false,
+		"showgrid": false,
+		"showtitle": false,
+		"sizetogrid": false,
+		"startfield": 0,
+		"statusbarpos": "kSBPosBottom",
+		"statusedge": "kBorderChisel",
+		"style": "kTitle",
+		"title": "",
+		"toolbarnames": "",
+		"toolbaroptions": "kTBOptionNone",
+		"toolbarpos": "kDockingAreaNone",
+		"top": 264,
+		"userinfo": "",
+		"usesheets": false,
+		"version": "",
+		"vertgrid": 8,
+		"vertscroll": false,
+		"width": 815,
+		"zoombox": false
+	},
+	"statusbar": {
+		"properties": {
+			"fieldstyle": "",
+			"font": 1,
+			"fontsize": 0,
+			"helppane": 0
+		}
+	}
+}

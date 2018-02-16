@@ -1,0 +1,2 @@
+On evClick
+	Calculate refCalendar.$dayviewdaystart as (pLineNumber-1)*15+300

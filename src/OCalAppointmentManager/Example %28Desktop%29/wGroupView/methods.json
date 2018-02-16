@@ -1,0 +1,578 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pSourceWin",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1,
+				"desc": "Window that contains the calendar sub-window"
+			},
+			{
+				"name": "pSourceInst",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 2,
+				"desc": "Sub-window instance"
+			},
+			{
+				"name": "pSourceCal",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 3,
+				"desc": "Calendar control"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 2,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$control",
+		"ident": 3,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$set",
+		"ident": 6,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1
+			},
+			{
+				"name": "pSourceListRef",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2,
+				"desc": "special reference to callers list created by Calendar Library.$makedatareference()"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "minAllDayHeight",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$maxAllDayHeight",
+		"ident": 11,
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pCalendar",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pMinHeight",
+				"order": 2,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$--- menu support ---",
+		"ident": 24,
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$setIcon",
+		"ident": 22,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pIconID",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$deleteEvent",
+		"ident": 23,
+		"order": 8,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "--- methods for assigning to all ---",
+		"ident": 13,
+		"order": 9,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "setDate",
+		"ident": 0,
+		"order": 10,
+		"pvardefs": [
+			{
+				"name": "pDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "setColumnNames",
+		"ident": 5,
+		"order": 11,
+		"pvardefs": [
+			{
+				"name": "pSourceCal",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "setDayCount",
+		"ident": 7,
+		"order": 12,
+		"pvardefs": [
+			{
+				"name": "pCount",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pDate",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "setAllDayHeight",
+		"ident": 18,
+		"order": 13,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "minAllDayHeight",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "redrawAll",
+		"ident": 4,
+		"order": 14,
+		"pvardefs": [
+			{
+				"name": "pExclude",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1,
+				"initval": "#NULL"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "--- shared event methods ---",
+		"ident": 12,
+		"order": 15,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "evAllDayHeight",
+		"ident": 8,
+		"order": 16,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "evCanDrop",
+		"ident": 16,
+		"order": 17,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pDragField",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pDragType",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pDragValue",
+				"order": 3,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "evClick",
+		"ident": 10,
+		"order": 18,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "evCreateEvent",
+		"ident": 19,
+		"order": 19,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pStartDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 2
+			},
+			{
+				"name": "pEndDate",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 3
+			},
+			{
+				"name": "pAllDay",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "evDateRClick",
+		"ident": 21,
+		"order": 20,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pCurrentDate",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 2
+			},
+			{
+				"name": "pAllDay",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "evDeleteEvent",
+		"ident": 20,
+		"order": 21,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "evDrop",
+		"ident": 17,
+		"order": 22,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pDragField",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pDragType",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pDragValue",
+				"order": 3,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "groupFillColor",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "groupLayer",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "groupName",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "groupTextColor",
+				"order": 7,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "evResizeEventEnd",
+		"ident": 14,
+		"order": 23,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "evResizeEventStart",
+		"ident": 15,
+		"order": 24,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "evVScroll",
+		"ident": 9,
+		"order": 25,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

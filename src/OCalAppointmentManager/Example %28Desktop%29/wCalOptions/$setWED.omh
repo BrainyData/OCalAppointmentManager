@@ -1,0 +1,2 @@
+;  set weekend days
+Calculate refCalendar.$weekenddays as con(int(iWED1),int(iWED2),int(iWED3),int(iWED4),int(iWED5),int(iWED6),int(iWED7))

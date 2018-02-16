@@ -1,0 +1,67 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$destruct",
+		"ident": 3,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setcalendar",
+		"ident": 0,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pCalendarControl",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$timer",
+		"ident": 2,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "minutes",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "template",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]

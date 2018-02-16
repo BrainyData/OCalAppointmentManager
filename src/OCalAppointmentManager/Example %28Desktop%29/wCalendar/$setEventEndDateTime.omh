@@ -1,0 +1,13 @@
+If len(refCalendar.$columnendtime)>0&refCalendar.$columnenddate<>refCalendar.$columnendtime
+	;  set seperate date and time columns
+	Calculate date as dat(pDate,#FD)
+	Calculate time as tim(pDate,#FT)
+	Do method $setEventItem (refCalendar.$columnenddate,date,pSelected,kFalse)
+	Do method $setEventItem (refCalendar.$columnendtime,time,pSelected,kFalse)
+	If pRedraw
+		Do refCalendar.$redraw()
+	End If
+Else
+	;  date and time columns are the same, just set once
+	Do method $setEventItem (refCalendar.$columnenddate,pDate,pSelected,pRedraw)
+End If

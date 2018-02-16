@@ -1,0 +1,4 @@
+;  user pressed the delete key, delete all selected events
+Do iEventsList.$remove(kListDeleteSelected)
+Do method updateEventFields
+Do $cfield.$redraw()

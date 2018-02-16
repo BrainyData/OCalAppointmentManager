@@ -1,0 +1,112 @@
+[
+	{
+		"name": "EV_ICON_ID",
+		"order": 1,
+		"desc": "Events Icon ID",
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_TEXT",
+		"order": 2,
+		"desc": "Event title displayed in event box",
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 1000,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_DATE_START",
+		"order": 3,
+		"desc": "Starting date and time of event",
+		"type": "kDate",
+		"subtype": "kDatetime",
+		"sublen": 0,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_DATE_END",
+		"order": 4,
+		"desc": "End date and time of event",
+		"type": "kDate",
+		"subtype": "kDatetime",
+		"sublen": 0,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_FILL_COLOR",
+		"order": 5,
+		"desc": "Events background fill color",
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_TEXT_COLOR",
+		"order": 6,
+		"desc": "Events text color",
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_LAYERS",
+		"order": 7,
+		"desc": "Event layers array. Series of 'Y' and 'N' characters to indicate the calendar groups the event belongs to. The limit is 255 groups.",
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 32,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_TOOLTIP",
+		"order": 8,
+		"desc": "Text/Notes for event tooltip",
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 1000,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_ALL_DAY",
+		"order": 9,
+		"desc": "True for all day events",
+		"type": "kBoolean",
+		"subtype": 0,
+		"sublen": 0,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	},
+	{
+		"name": "EV_DONE",
+		"order": 10,
+		"desc": "Used for to do list",
+		"type": "kBoolean",
+		"subtype": 0,
+		"sublen": 0,
+		"nonull": false,
+		"initnull": false,
+		"odbcaccessmask": -1
+	}
+]

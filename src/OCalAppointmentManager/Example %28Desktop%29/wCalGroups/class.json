@@ -1,0 +1,129 @@
+{
+	"classtype": "kWindow",
+	"internalversion": 3,
+	"designtaskname": "Startup_Task",
+	"nextident": 1024,
+	"lastgroupident": 0,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "iGroupColor",
+			"order": 4,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iGroupList",
+			"order": 1,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iGroupName",
+			"order": 2,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iGroupTextColor",
+			"order": 5,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iGroupVis",
+			"order": 3,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "refCalendar",
+			"order": 6,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"alpha": 255,
+		"backcolor": "kColor3DFace",
+		"backgroundskin": 0,
+		"backgroundskinalign": "kPALtopLeft",
+		"backgroundtheme": "kBGThemeWindow",
+		"backpattern": 0,
+		"bringinfront": false,
+		"clickbehind": true,
+		"closebox": true,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"contextmenu": "",
+		"createdate": "2006-12-07 23:34:32",
+		"desc": "Calendar Groups Subwindow",
+		"dockingedge": "kBorderChisel",
+		"dropmode": "kAcceptNone",
+		"edgefloat": "kEFnone",
+		"editor": "",
+		"editordata": "",
+		"effect": "kBorderNone",
+		"enablemenuandtoolbars": true,
+		"external": true,
+		"forecolor": "kColor3DFace",
+		"growbox": true,
+		"hasmenus": false,
+		"hasstatusbar": false,
+		"height": 204,
+		"helpbutton": false,
+		"helpfile": 0,
+		"horzgrid": 8,
+		"horzscroll": false,
+		"inheritedorder": 1,
+		"issubwindow": false,
+		"issupercomponent": false,
+		"keepclicks": true,
+		"left": 542,
+		"menuedge": "kBorderChisel",
+		"menunames": "",
+		"minimizebox": false,
+		"minimizeiconid": 2006,
+		"moddate": "2018-02-09 12:43:01",
+		"modelessdata": true,
+		"showascheckedout": false,
+		"showcommands": false,
+		"showgrid": false,
+		"showtitle": false,
+		"sizetogrid": false,
+		"startfield": 0,
+		"statusbarpos": "kSBPosBottom",
+		"statusedge": "kBorderChisel",
+		"style": "kTitle",
+		"title": "",
+		"toolbarnames": "",
+		"toolbaroptions": "kTBOptionNone",
+		"toolbarpos": "kDockingAreaNone",
+		"top": 194,
+		"userinfo": "",
+		"usesheets": false,
+		"version": "",
+		"vertgrid": 8,
+		"vertscroll": false,
+		"width": 149,
+		"zoombox": false
+	},
+	"statusbar": {
+		"properties": {
+			"fieldstyle": "",
+			"font": 1,
+			"fontsize": 0,
+			"helppane": 0
+		}
+	}
+}

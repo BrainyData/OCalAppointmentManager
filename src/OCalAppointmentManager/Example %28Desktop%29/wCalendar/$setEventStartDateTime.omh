@@ -1,0 +1,22 @@
+If len(refCalendar.$columntime)>0&refCalendar.$columndate<>refCalendar.$columntime
+	;  set seperate date and time columns
+	Calculate date as dat(pDate,#FD)
+	Calculate time as tim(pDate,#FT)
+	Do method $setEventItem (refCalendar.$columndate,date,pSelected,kFalse)
+	Do method $setEventItem (refCalendar.$columntime,time,pSelected,kFalse)
+	If pRedraw
+		;  when changing the start date we must sort the list
+		Do method sortList     ;; 2009_12_14_CHANGE_1
+	End If
+Else
+	;  date and time columns are the same, just set once
+	Do method $setEventItem (refCalendar.$columndate,pDate,pSelected,kFalse)
+	If pRedraw
+		;  when changing the start date we must sort the list
+		Do method sortList     ;; 2009_12_14_CHANGE_1
+	End If
+End If
+If pRedraw
+	Do iEventsList.$first(kTrue)     ;; sets $line to first selected row
+	Do refCalendar.$redraw()
+End If

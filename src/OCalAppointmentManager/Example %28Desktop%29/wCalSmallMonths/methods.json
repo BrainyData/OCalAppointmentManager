@@ -1,0 +1,118 @@
+[
+	{
+		"name": "$--- initialization ---",
+		"ident": 3,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$initialize",
+		"ident": 5,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setDate",
+		"ident": 0,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1,
+				"initval": "#D"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setFirstDay",
+		"ident": 2,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pFirstDay",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setDigestList",
+		"ident": 6,
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pCalendarRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pDataRef",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "--- private ---",
+		"ident": 1,
+		"order": 6,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "evDateChanged",
+		"ident": 4,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

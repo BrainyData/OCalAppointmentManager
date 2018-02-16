@@ -1,0 +1,12 @@
+
+
+Do pList.$define(date,start_time,end_time)     ;; We define our list from a file class. We could also define it from a SQL class, or locals variables (Studio 4.x only).
+
+Do pList.$add("19 MAR 2007","10:00","11:00")
+Do pList.$add("19 MAR 2007","11:30","12:00")
+Do pList.$add("20 MAR 2007","11:30","12:00")
+
+Calculate pCalendar.$columndate as nam(date)
+Calculate pCalendar.$columntime as nam(start_time)
+Calculate pCalendar.$columnenddate as nam(date)
+Calculate pCalendar.$columnendtime as nam(end_time)

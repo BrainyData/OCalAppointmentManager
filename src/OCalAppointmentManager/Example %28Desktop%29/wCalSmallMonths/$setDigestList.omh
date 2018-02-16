@@ -1,0 +1,14 @@
+
+Calculate ivEventsList as pDataRef
+
+Calculate $cinst.$objs.Cal1.$columndate as pCalendarRef.$columndate
+Calculate $cinst.$objs.Cal1.$columnenddate as pCalendarRef.$columnenddate
+Calculate $cinst.$objs.Cal1.$eventslist as nam(ivEventsList)
+
+Calculate $cinst.$objs.Cal2.$columndate as pCalendarRef.$columndate
+Calculate $cinst.$objs.Cal2.$columnenddate as pCalendarRef.$columnenddate
+Calculate $cinst.$objs.Cal2.$eventslist as nam(ivEventsList)
+
+Calculate $cinst.$objs.Cal3.$columndate as pCalendarRef.$columndate
+Calculate $cinst.$objs.Cal3.$columnenddate as pCalendarRef.$columnenddate
+Calculate $cinst.$objs.Cal3.$eventslist as nam(ivEventsList)

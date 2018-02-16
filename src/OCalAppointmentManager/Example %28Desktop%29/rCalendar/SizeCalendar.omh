@@ -1,0 +1,12 @@
+;  we size the calendar to the identical size on the window
+;  we have to convert pixels to cms or inches
+If $root.$prefs.$usecms
+	Calculate theWidth as pRefCalendar.$width/sys(87)*2.54
+	Calculate theHeight as pRefCalendar.$height/sys(88)*2.54
+Else
+	Calculate theWidth as pRefCalendar.$width/sys(87)
+	Calculate theHeight as pRefCalendar.$height/sys(88)
+End If
+
+Calculate refCalendar.$width as theWidth
+Calculate refCalendar.$height as theHeight

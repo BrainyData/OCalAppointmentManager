@@ -1,0 +1,228 @@
+{
+	"classtype": "kWindow",
+	"internalversion": 1,
+	"designtaskname": "Startup_Task",
+	"nextident": 1094,
+	"lastgroupident": 0,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "iDayEndsAt",
+			"order": 6,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iDaysInDayPlan",
+			"order": 8,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iDayStartsAt",
+			"order": 4,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iShowHours",
+			"order": 7,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iText",
+			"order": 5,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iValue",
+			"order": 9,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iWED1",
+			"order": 13,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iWED2",
+			"order": 14,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iWED3",
+			"order": 15,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iWED4",
+			"order": 16,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iWED5",
+			"order": 17,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iWED6",
+			"order": 18,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iWED7",
+			"order": 19,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0
+		},
+		{
+			"name": "iWeekStart",
+			"order": 10,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "refCalendar",
+			"order": 1,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.Calendar"
+		},
+		{
+			"name": "refDFontSize",
+			"order": 12,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.DFontSize"
+		},
+		{
+			"name": "refDVMinuteScale",
+			"order": 2,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.DVMinuteScale"
+		},
+		{
+			"name": "refDVTimeScale",
+			"order": 3,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.DVTimeScale"
+		},
+		{
+			"name": "refHFontSize",
+			"order": 11,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0,
+			"initval": "$cinst.$objs.HFontSize"
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"alpha": 255,
+		"backcolor": "kColor3DFace",
+		"backgroundskin": 0,
+		"backgroundskinalign": "kPALtopLeft",
+		"backgroundtheme": "kBGThemeWindow",
+		"backpattern": 0,
+		"bringinfront": false,
+		"clickbehind": true,
+		"closebox": true,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"contextmenu": "",
+		"createdate": "2006-12-07 23:34:32",
+		"desc": "Calendar Options",
+		"dockingedge": "kBorderChisel",
+		"dropmode": "kAcceptNone",
+		"edgefloat": "kEFnone",
+		"editor": "",
+		"editordata": "",
+		"effect": "kBorderNone",
+		"enablemenuandtoolbars": true,
+		"external": true,
+		"forecolor": "kColor3DFace",
+		"growbox": false,
+		"hasmenus": false,
+		"hasstatusbar": false,
+		"height": 600,
+		"helpbutton": false,
+		"helpfile": 0,
+		"horzgrid": 8,
+		"horzscroll": false,
+		"inheritedorder": 1,
+		"issubwindow": false,
+		"issupercomponent": false,
+		"keepclicks": true,
+		"left": 688,
+		"menuedge": "kBorderChisel",
+		"menunames": "",
+		"minimizebox": false,
+		"minimizeiconid": 2006,
+		"moddate": "2018-02-09 12:00:25",
+		"modelessdata": true,
+		"showascheckedout": false,
+		"showcommands": false,
+		"showgrid": false,
+		"showtitle": false,
+		"sizetogrid": false,
+		"startfield": 0,
+		"statusbarpos": "kSBPosBottom",
+		"statusedge": "kBorderChisel",
+		"style": "kTitle",
+		"title": {
+			"type": 0,
+			"calc": "Calendar Options"
+		},
+		"toolbarnames": "",
+		"toolbaroptions": "kTBOptionNone",
+		"toolbarpos": "kDockingAreaNone",
+		"top": 588,
+		"userinfo": "",
+		"usesheets": false,
+		"version": "",
+		"vertgrid": 8,
+		"vertscroll": false,
+		"width": 580,
+		"zoombox": false
+	},
+	"statusbar": {
+		"properties": {
+			"fieldstyle": "",
+			"font": 1,
+			"fontsize": 0,
+			"helppane": 0
+		}
+	}
+}

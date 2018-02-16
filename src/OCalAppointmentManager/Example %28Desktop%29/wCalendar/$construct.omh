@@ -1,0 +1,3 @@
+;  Enter your initialization code here
+Calculate iCurrentTime as $objects.oCalCurrentTime.$newref()     ;; CHANGE_2015_08_13__1
+Do iCurrentTime.$setcalendar(refCalendar)

@@ -1,0 +1,27 @@
+{
+	"ident": 1046,
+	"order": 16398,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kRightJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 6,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 17,
+		"left": 115,
+		"objlink": 0,
+		"text": "Weekend days:",
+		"textcolor": "kColorWindowText",
+		"top": 374,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 100
+	}
+}

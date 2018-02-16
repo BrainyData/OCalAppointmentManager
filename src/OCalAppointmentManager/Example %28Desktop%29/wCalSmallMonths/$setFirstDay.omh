@@ -1,0 +1,4 @@
+
+Calculate $cinst.$objs.Cal1.$firstday as pFirstDay
+Calculate $cinst.$objs.Cal2.$firstday as pFirstDay
+Calculate $cinst.$objs.Cal3.$firstday as pFirstDay

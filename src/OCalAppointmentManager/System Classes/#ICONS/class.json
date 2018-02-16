@@ -1,0 +1,129 @@
+{
+	"classtype": "kSystemtable",
+	"internalversion": 0,
+	"iconversion": 0,
+	"nextident": 33,
+	"properties": {
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2006-12-07 23:34:22",
+		"desc": "",
+		"external": false,
+		"moddate": "2007-09-17 09:40:59",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": ""
+	},
+	"iconids": [
+		{
+			"iconid": 10000,
+			"pageid": 32,
+			"iconpos": 1,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10001,
+			"pageid": 32,
+			"iconpos": 2,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10002,
+			"pageid": 32,
+			"iconpos": 3,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10003,
+			"pageid": 32,
+			"iconpos": 4,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10004,
+			"pageid": 32,
+			"iconpos": 5,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10020,
+			"pageid": 33,
+			"iconpos": 1,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10021,
+			"pageid": 33,
+			"iconpos": 2,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10022,
+			"pageid": 33,
+			"iconpos": 3,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10023,
+			"pageid": 33,
+			"iconpos": 4,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10024,
+			"pageid": 33,
+			"iconpos": 5,
+			"defaultsize": 1,
+			"flags": 0
+		},
+		{
+			"iconid": 10025,
+			"pageid": 33,
+			"iconpos": 6,
+			"defaultsize": 1,
+			"flags": 0
+		}
+	],
+	"pages": [
+		{
+			"pageid": 32,
+			"name": "Calendar",
+			"bitmapid": 1,
+			"flags": 802
+		},
+		{
+			"pageid": 33,
+			"name": "Events",
+			"bitmapid": 2,
+			"flags": 1794
+		}
+	],
+	"bitmaps": [
+		{
+			"bitmapid": 1,
+			"solid": {
+				"$png": "solid1.png"
+			},
+			"alpha": {
+				"$png": "alpha1.png"
+			}
+		},
+		{
+			"bitmapid": 2,
+			"solid": {
+				"$png": "solid2.png"
+			},
+			"alpha": {
+				"$png": "alpha2.png"
+			}
+		}
+	]
+}

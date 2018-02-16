@@ -1,0 +1,21 @@
+[
+	{
+		"name": "$event",
+		"ident": 0,
+		"order": 16384,
+		"desc": "CHANGE_2014_06_18__1 new year digest mode",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "refCalendar",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"initval": "$cinst.$objs.Calendar"
+			}
+		]
+	}
+]

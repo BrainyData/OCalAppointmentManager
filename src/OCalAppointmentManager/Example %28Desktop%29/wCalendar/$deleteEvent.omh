@@ -1,0 +1,4 @@
+;  remove the selected events
+Do iEventsList.$remove(kListDeleteSelected)
+Do refCalendar.$redraw()
+Do method updateEventFields

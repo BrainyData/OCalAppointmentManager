@@ -1,0 +1,10 @@
+Switch sys(6)
+	Case 'W','N'
+		Quit method $clib.$fieldstyles.[pStyleName].$platforms.kMSWindows.$fontsize
+	Case 'M'
+		Quit method $clib.$fieldstyles.[pStyleName].$platforms.kMacintosh.$fontsize
+	Case 'U'
+		Quit method $clib.$fieldstyles.[pStyleName].$platforms.kUnix.$fontsize
+	Case 'X'
+		Quit method $clib.$fieldstyles.[pStyleName].$platforms.kMacOSX.$fontsize
+End Switch

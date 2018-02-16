@@ -1,0 +1,4 @@
+;  initialize our sub-windows
+Do refGroups.$initialize
+Do refCalendar.$initialize
+Do refSmallMonths.$initialize

@@ -1,0 +1,12 @@
+
+;  we are responsible for syncronizing the height of all the all-day panes.
+
+;  first we clear our all-day fixed height settings, this will force
+;  the controls to size the all-day panes according to need
+Do $cinst.$objs.$sendall($ref.$dayviewalldayheight.$assign(0),$ref.$componentctrl="Calendar Control")
+
+;  than we can get the highest all-day height
+Do $cinst.$objs.$sendall($cinst.$maxAllDayHeight($ref,minAllDayHeight),$ref.$componentctrl="Calendar Control")
+
+;  then we apply it to all
+Do $cinst.$objs.$sendall($ref.$dayviewalldayheight.$assign(minAllDayHeight),$ref.$componentctrl="Calendar Control")

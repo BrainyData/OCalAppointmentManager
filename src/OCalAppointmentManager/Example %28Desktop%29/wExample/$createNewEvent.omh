@@ -1,0 +1,11 @@
+;  create a new event
+If isnull(pEndDate)
+	Do refCalendar.$addEvent(0,con(refGroups.$getGroupName,' Event'),pStartDate,dadd(kMinute,15,pStartDate),refGroups.$getGroupFillColor,refGroups.$getGroupTextColor,refGroups.$getGroupLayer,pAllDay)
+Else
+	If pStartDate>pEndDate     ;; see if we have to swap our dates around, user mayhave dragged in reverse to create an event
+		Calculate tmp as pStartDate
+		Calculate pStartDate as pEndDate
+		Calculate pEndDate as tmp
+	End If
+	Do refCalendar.$addEvent(0,con(refGroups.$getGroupName,' Event'),pStartDate,pEndDate,refGroups.$getGroupFillColor,refGroups.$getGroupTextColor,refGroups.$getGroupLayer,pAllDay)
+End If

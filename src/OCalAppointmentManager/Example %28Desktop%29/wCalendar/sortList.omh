@@ -1,0 +1,6 @@
+;  2009_12_14_CHANGE_1     ;; new method for sorting list
+If refCalendar.$columndate=refCalendar.$columntime
+	Do iEventsList.$sort($ref.[refCalendar.$columndate],kFalse)
+Else
+	Do iEventsList.$sort($ref.[refCalendar.$columndate],kFalse,$ref.[refCalendar.$columntime],kFalse)
+End If

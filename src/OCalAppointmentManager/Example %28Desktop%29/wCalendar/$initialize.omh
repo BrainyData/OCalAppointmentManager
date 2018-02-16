@@ -1,0 +1,24 @@
+
+;  get events list from main window     ;; this should also assign the column names
+Do Calendar Library.$disablescreenupdates()
+
+Do $cwind.$buildEventsList(refCalendar,iEventsList)
+Do $cwind.$buildHolidayList(refCalendar,holidays)     ;; CHANGE_25MAR09_1
+Calculate refCalendar.$holidaylist as holidays     ;; CHANGE_25MAR09_1
+;  store some of our column names as these may be cleared by the options window
+Calculate iColumnIcon as refCalendar.$columnicon
+Calculate iColumnTime as refCalendar.$columntime
+;  redraw our control
+Do method setButtons
+Do refCalendar.$redraw()
+
+;  set our date     ;; CHANGE_02APR09_2 now done at the end and we reset day-view date
+Calculate refCalendar.$currday as #D
+Calculate refCalendar.$dayviewdate as #NULL     ;; reset day view
+
+Do Calendar Library.$enablescreenupdates()
+
+;  update our small months calendar with our list so it may display the digest for each month     ;; CHANGE_2014_05_12__1
+Do $cwind.$getSmallMonths Returns refSmallMonths
+Do Calendar Library.$makedatareference(nam(iEventsList),dataReference)
+Do refSmallMonths.$setDigestList(refCalendar,dataReference)

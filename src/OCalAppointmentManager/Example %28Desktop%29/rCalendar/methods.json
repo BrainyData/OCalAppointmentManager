@@ -1,0 +1,147 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pRefCalendar",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1,
+				"desc": "Reference to calendar on window"
+			},
+			{
+				"name": "pEventsList",
+				"order": 2,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2,
+				"desc": "Reference to list of events"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "cnt",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "name",
+				"order": 5,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "ref",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "refDst",
+				"order": 6,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "refSrc",
+				"order": 7,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 2,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "CopyProperties",
+		"ident": 0,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pRefCalendar",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1,
+				"desc": "Reference to calendar on window"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "date",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "refCalendar",
+				"order": 2,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"initval": "$cinst.$objs.Calendar.$ref"
+			}
+		]
+	},
+	{
+		"name": "SizeCalendar",
+		"ident": 3,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pRefCalendar",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "refCalendar",
+				"order": 4,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"initval": "$cinst.$objs.Calendar.$ref"
+			},
+			{
+				"name": "theHeight",
+				"order": 3,
+				"type": "kNumber",
+				"subtype": "k4dp",
+				"sublen": 0
+			},
+			{
+				"name": "theWidth",
+				"order": 2,
+				"type": "kNumber",
+				"subtype": "k4dp",
+				"sublen": 0
+			}
+		]
+	}
+]

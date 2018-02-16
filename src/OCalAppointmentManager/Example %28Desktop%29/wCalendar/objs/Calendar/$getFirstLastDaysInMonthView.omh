@@ -1,0 +1,19 @@
+;  return the first visible date in month view
+
+;  get the date of the 1st of the month being shown
+Calculate date_first_of_month as con("1",dtm(refCalendar.$currday),dtcy(refCalendar.$currday))
+;  calculate the dtw() of the 1st of the month being shown
+Calculate day_first_of_month as dtw(date_first_of_month)
+;  calculate the dtw() of the calendar's $firstday, will be kSunday to kMonday (12-18 as a number) so we must subtract 12
+Calculate day_firstday as refCalendar.$firstday-12
+;  now we can do a negative dadd using days from the first of the month
+If day_firstday=day_first_of_month     ;; in this case we always show the prior week
+	Calculate date_first_visible as dadd(kDay,-7,date_first_of_month)
+Else
+	Calculate date_first_visible as dadd(kDay,day_firstday-day_first_of_month,date_first_of_month)
+End If
+
+;  we have our first visible date
+Calculate pOutFirstDate as date_first_visible
+;  calculate our last visible date by adding 6*7 days - 1 (month view displays 6 rows of 7 days)
+Calculate pOutLastDate as dadd(kDay,41,date_first_visible)

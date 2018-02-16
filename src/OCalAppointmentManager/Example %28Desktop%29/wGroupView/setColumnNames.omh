@@ -1,0 +1,13 @@
+
+;  we assign the column names for all our controls from the given control
+Do $cinst.$objs.$sendall($ref.$columnallday.$assign(pSourceCal.$columnallday),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columnbackcolor.$assign(pSourceCal.$columnbackcolor),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columndate.$assign(pSourceCal.$columndate),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columnenddate.$assign(pSourceCal.$columnenddate),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columnendtime.$assign(pSourceCal.$columnendtime),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columnicon.$assign(pSourceCal.$columnicon),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columnlayers.$assign(pSourceCal.$columnlayers),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columntext.$assign(pSourceCal.$columntext),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$::columntextcolor.$assign(pSourceCal.$::columntextcolor),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columntime.$assign(pSourceCal.$columntime),$ref.$componentctrl="Calendar Control")
+Do $cinst.$objs.$sendall($ref.$columntooltip.$assign(pSourceCal.$columntooltip),$ref.$componentctrl="Calendar Control")

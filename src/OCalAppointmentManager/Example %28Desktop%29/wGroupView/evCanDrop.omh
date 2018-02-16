@@ -1,0 +1,7 @@
+
+Switch low(pDragField().$name)
+	Case 'calfirst','cal2','cal3','cal4','cal5','cal6','callast'
+		Quit event handler (Pass to next handler)
+	Default
+		Quit event handler (Discard event)
+End Switch

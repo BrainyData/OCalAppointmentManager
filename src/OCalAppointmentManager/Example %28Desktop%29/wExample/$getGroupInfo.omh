@@ -1,0 +1,5 @@
+Calculate pOutName as refGroups.$getGroupName(pGroupNumber)
+Calculate pOutFillColor as refGroups.$getGroupFillColor(pGroupNumber)
+Calculate pOutTextColor as refGroups.$getGroupTextColor(pGroupNumber)
+Calculate pOutLayer as refGroups.$getGroupLayer(pGroupNumber)
+Quit method kTrue

@@ -1,0 +1,12 @@
+;  make sure we have installed the correct Calendar control
+If $components.$findname("Calendar Library")
+	Do method checkExternalVersion Returns message     ;; CHANGE_V170
+Else
+	Calculate message as "Unable to locate the Calendar Library. Please make sure you correctly install the Calendar external component."
+End If
+If len(message)
+	OK message Startup Error (Icon,Sound bell) {[message]////Unable to continue.}
+	Quit method kFalse
+Else
+	Quit method kTrue
+End If

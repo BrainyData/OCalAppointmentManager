@@ -1,0 +1,5 @@
+On evDateChange
+	If dpart(kMonth,pCurrentDate)<>dpart(kMonth,$cfield.$currday)
+		Quit event handler (Discard event)
+	End If
+	Do method evDateChanged (pCurrentDate)

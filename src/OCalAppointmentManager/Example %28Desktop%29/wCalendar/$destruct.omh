@@ -1,0 +1,4 @@
+;  Enter your termination code here
+If iCurrentTime.$validref()     ;; CHANGE_2015_08_13__1
+	Do iCurrentTime.$deleteref()
+End If

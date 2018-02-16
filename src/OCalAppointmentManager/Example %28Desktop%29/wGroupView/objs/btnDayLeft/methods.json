@@ -1,0 +1,19 @@
+[
+	{
+		"name": "$event",
+		"ident": 0,
+		"order": 16384,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "dt",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			}
+		]
+	}
+]

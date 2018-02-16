@@ -1,0 +1,3 @@
+;  return item reference to the main calendar control
+;  called by SmallMonths and Groups sub-windows during initialization
+Quit method refCalendar.$getCalendar

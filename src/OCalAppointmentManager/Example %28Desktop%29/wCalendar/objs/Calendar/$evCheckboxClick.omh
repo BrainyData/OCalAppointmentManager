@@ -1,0 +1,6 @@
+;  handle clicks on checkbox in event content (see templates discussion in documentation)     ;; CHANGE_2014_04_24__1
+
+;  update our column in list
+If iEventsList.$line&pColumnNumber
+	Calculate iEventsList.c[pColumnNumber] as not(iEventsList.C[pColumnNumber])
+End If

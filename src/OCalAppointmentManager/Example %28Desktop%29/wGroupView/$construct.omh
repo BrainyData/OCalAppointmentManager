@@ -1,0 +1,4 @@
+Set reference iSourceWin to pSourceWin
+Set reference iSourceInst to pSourceInst
+Set reference iSourceCal to pSourceCal
+Do method setColumnNames (pSourceCal)

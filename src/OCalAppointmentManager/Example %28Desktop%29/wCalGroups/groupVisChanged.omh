@@ -1,0 +1,4 @@
+For ln from 1 to iGroupList.$linecount step 1
+	Calculate layers as con(layers,pick(iGroupList.[ln].iGroupVis,'N','Y'))
+End For
+Calculate refCalendar.$layers as layers

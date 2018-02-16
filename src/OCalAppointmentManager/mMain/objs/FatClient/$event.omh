@@ -1,0 +1,6 @@
+Test for window open {wExample}
+If flag true
+	Bring window instance to front wExample
+Else
+	Open window instance wExample/CEN
+End If

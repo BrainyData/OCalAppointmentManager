@@ -1,0 +1,30 @@
+{
+	"ident": 1025,
+	"order": 16386,
+	"objtype": "kText",
+	"properties": {
+		"align": "kCenterJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CalTitle",
+		"font": 1,
+		"fontsize": 18,
+		"fontstyle": "kBold",
+		"forecolor": "kColorForeFill",
+		"height": 20,
+		"left": 6,
+		"objlink": 0,
+		"text": {
+			"type": 14,
+			"calc": "[jst(iDate,\"D:w, d n y\")]"
+		},
+		"textcolor": "kColorWindowText",
+		"top": 5,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 726
+	}
+}

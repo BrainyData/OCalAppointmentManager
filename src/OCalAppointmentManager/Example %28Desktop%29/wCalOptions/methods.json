@@ -1,0 +1,157 @@
+[
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 1,
+		"pvardefs": [
+			{
+				"name": "pFRefCalendar",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "dt",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "loop",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "wedDays",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 2,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$control",
+		"ident": 6,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "property",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "setColorButtons",
+		"ident": 7,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "setButtons",
+		"ident": 0,
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getFontSize",
+		"ident": 3,
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "pStyleName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "platform",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setFontSize",
+		"ident": 4,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pStyleName",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			},
+			{
+				"name": "pValue",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "platform",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$setWED",
+		"ident": 5,
+		"order": 8,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	}
+]

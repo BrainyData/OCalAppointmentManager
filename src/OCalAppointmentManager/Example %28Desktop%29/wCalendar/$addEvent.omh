@@ -1,0 +1,23 @@
+;  first deselect all rows if we are allowed to redraw
+If pRedraw
+	Do iEventsList.$sendall($ref.$selected.$assign(kFalse))
+End If
+;  add the event and assign properties
+Do iEventsList.$add()
+Do iEventsList.$line.$assign(iEventsList.$linecount)
+Do method $setEventIcon (pIcon,kFalse,kFalse)
+Do method $setEventText (pText,kFalse,kFalse)
+Do method $setEventStartDateTime (pStartDateTime,kFalse,kFalse)
+Do method $setEventEndDateTime (pEndDateTime,kFalse,kFalse)
+Do method $setEventAllDay (pAllDay,kFalse,kFalse)
+Do method $setEventFillColor (pFillColor,kFalse,kFalse)
+Do method $setEventTextColor (pTextColor,kFalse,kFalse)
+Do method $setEventLayers (pLayers,kFalse,kFalse)
+;  now sort and redraw the calendar with the new event selected
+If pRedraw
+	Do iEventsList.[iEventsList.$linecount].$selected.$assign(kTrue)
+	Do method sortList     ;; 2009_12_14_CHANGE_1
+	Do iEventsList.$first(kTrue)     ;; sets $line to first selected row
+	Do refCalendar.$redraw()
+	Do method updateEventFields
+End If

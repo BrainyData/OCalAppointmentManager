@@ -1,0 +1,2 @@
+;  return item reference to the subwindow of the 3 small calendar control     ;; 20090522_CHANGE_1 new method
+Quit method refSmallMonths

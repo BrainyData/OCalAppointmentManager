@@ -1,0 +1,16 @@
+;  we now use it to open the group view window     ;; CHANGE_26MAR09_1 begins
+
+;  we create a special reference to our list so that the calendar controls
+;  on the other window can directly access our list
+;  WARNING! This will cause crashes if this instance goes away without closing the other window first
+Do Calendar Library.$makedatareference(nam(iEventsList),dataRef)
+
+Test for window open {wGroupView}
+If flag true
+	Do $iwindows.wGroupView.$set(pClickDate,dataRef,$cfield)
+	Bring window instance to front wGroupView
+Else
+	Open window instance wGroupView ($cwind,$cinst,$cfield)
+	Do $iwindows.wGroupView.$set(pClickDate,dataRef,$cfield)
+End If
+Quit event handler (Discard event)     ;; CHANGE_26MAR09_1 ends

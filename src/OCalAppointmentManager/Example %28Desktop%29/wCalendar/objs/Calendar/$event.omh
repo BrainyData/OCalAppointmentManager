@@ -1,0 +1,47 @@
+On evClick
+	Do $cfield.$evClick($cfield.$mousedate)     ;; 20090522_CHANGE_1
+	
+On evCheckboxClick     ;; CHANGE_2014_04_24__1
+	Do $cfield.$evCheckboxClick(pColumnNumber)
+	
+On evCanDrop
+	Do $cfield.$evCanDrop(pDragField,pDragType,pDragValue,$cfield.$dropdate,$cfield.$dropallday)
+	
+On evCreateEvent
+	Do $cfield.$evCreateEvent(pStartDate,pEndDate,pAllDay)     ;; let our parent window handle it
+	
+On evDateChange
+	Do $cfield.$evDateChanged(pCurrentDate,pAllDay)     ;; 20090522_CHANGE_1
+	
+On evDateDClick
+	;  double click on calendar day background, pCurrentDate = date & time clicked on
+	;  we now use it to open our new group view window     ;; CHANGE_26MAR09_1 begins
+	Do $cfield.$evDoubleClick($cfield.$currday)     ;; 20090522_CHANGE_1
+	
+On evDateRClick
+	Do $cfield.$evDateRClick($cfield,pCurrentDate,pAllDay)
+	
+On evDeleteEvent
+	Do $cfield.$evDeleteEvent()
+	
+On evDoubleClick
+	Do $cfield.$evDoubleClick($cfield.$mousedate)     ;; 20090522_CHANGE_1
+	
+On evDrop
+	Do $cfield.$evDrop(pDragField,pDragType,pDragValue,$cfield.$dropdate,$cfield.$dropallday)
+	
+On evMouseDown     ;; CHANGE_04NOV08_1 begins
+	;  set the appropriate cursor for dropping events
+	;  only way to work this without using fixed cursors
+	If #ALT     ;; if alt key is pressed events will be duplicated
+		Calculate $cfield.$candropcursor as kcursMcopy
+	Else     ;; otherwise events will be moved
+		Calculate $cfield.$candropcursor as kcursDragData
+	End If
+	
+On evResizeEventStart
+	Do $cfield.$evResizeEventStart($cfield.$dropdate)     ;; event's end date/time has been changed 2011_10_03_CHANGE_2
+	
+On evResizeEventEnd
+	Do $cfield.$evResizeEventEnd($cfield.$dropdate)     ;; event's end date/time has been changed
+	;  CHANGE_04NOV08_1 ends

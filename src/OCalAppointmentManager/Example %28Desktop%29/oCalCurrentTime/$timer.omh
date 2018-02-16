@@ -1,0 +1,6 @@
+;  ; Received a timer message.
+;  on evTimer
+Calculate minutes as ddiff(kMinute,jst(#D,"D:Dmy 00:00"),#T)
+Calculate template as replace('<color="#FF00FF" scalepos="$" scaleposoffset="0" scaleline><color="#FFAAFF" scaleposoffset="-1080" scaleline><scaleposoffset="+120" scaleline>','$',minutes)
+Calculate ivCalendarControl.$templatetimelines as template
+;  Send to trace log {[template]}

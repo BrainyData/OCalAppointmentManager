@@ -1,0 +1,588 @@
+[
+	{
+		"name": "$event",
+		"ident": 0,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "cnt",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "dif",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "dt1",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "dt2",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "dt3",
+				"order": 6,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "row",
+				"order": 7,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "tmpList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$evClick",
+		"ident": 7,
+		"order": 2,
+		"pvardefs": [
+			{
+				"name": "pClickDate",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "dt1",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "dt2",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "dt3",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$evCheckboxClick",
+		"ident": 18,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pColumnNumber",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$evCanDrop",
+		"ident": 15,
+		"order": 4,
+		"pvardefs": [
+			{
+				"name": "pDragField",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pDragType",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pDragValue",
+				"order": 3,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pDropDate",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 4
+			},
+			{
+				"name": "pDropAllDay",
+				"order": 5,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 5
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$evCreateEvent",
+		"ident": 12,
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pStartDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 1
+			},
+			{
+				"name": "pEndDate",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 2
+			},
+			{
+				"name": "pAllDay",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$evDateChanged",
+		"ident": 10,
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "pCurrentDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1
+			},
+			{
+				"name": "pAllDay",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pUpdateSmallMonths",
+				"order": 4,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3,
+				"initval": "kTrue",
+				"desc": "CHANGE_18JUN2013_1"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "refSmallMonths",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$evDateRClick",
+		"ident": 11,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pFieldRef",
+				"order": 3,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pCurrentDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 2
+			},
+			{
+				"name": "pAllDay",
+				"order": 2,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$evDeleteEvent",
+		"ident": 13,
+		"order": 8,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$evDoubleClick",
+		"ident": 8,
+		"order": 9,
+		"pvardefs": [
+			{
+				"name": "pClickDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "dataRef",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$evDrop",
+		"ident": 16,
+		"order": 10,
+		"pvardefs": [
+			{
+				"name": "pDragField",
+				"order": 7,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pDragType",
+				"order": 8,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pDragValue",
+				"order": 9,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pDropDate",
+				"order": 10,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 4
+			},
+			{
+				"name": "pDropAllDay",
+				"order": 11,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 5
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "cnt",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "dif",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "dt1",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "dt2",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "dt3",
+				"order": 6,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "refCalendar",
+				"order": 12,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"initval": "$cinst.$objs.Calendar.$ref"
+			},
+			{
+				"name": "tmpList",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$evResizeEventEnd",
+		"ident": 9,
+		"order": 11,
+		"pvardefs": [
+			{
+				"name": "pDropDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$evResizeEventStart",
+		"ident": 14,
+		"order": 12,
+		"pvardefs": [
+			{
+				"name": "pDropDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$showIcons",
+		"ident": 3,
+		"order": 13,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$showIcons.$assign",
+		"ident": 5,
+		"order": 14,
+		"pvardefs": [
+			{
+				"name": "pShow",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$showTimes",
+		"ident": 4,
+		"order": 15,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$showTimes.$assign",
+		"ident": 6,
+		"order": 16,
+		"pvardefs": [
+			{
+				"name": "pShow",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$daysInDayPlanView",
+		"ident": 1,
+		"order": 17,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$daysInDayPlanView.$assign",
+		"ident": 2,
+		"order": 18,
+		"pvardefs": [
+			{
+				"name": "pDays",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getFirstLastDaysInMonthView",
+		"ident": 17,
+		"order": 19,
+		"desc": "CHANGE_18JUN2013_1 new method",
+		"pvardefs": [
+			{
+				"name": "pOutFirstDate",
+				"order": 5,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pOutLastDate",
+				"order": 6,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "date_first_of_month",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "date_first_visible",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "day_firstday",
+				"order": 3,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "day_first_of_month",
+				"order": 2,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	}
+]

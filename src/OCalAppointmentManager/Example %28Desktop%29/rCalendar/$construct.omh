@@ -1,0 +1,12 @@
+;  point our events list at the passed events list
+Calculate ivEventsList as pEventsList
+
+;  we need to transfer the calendar properties so it appears the same as on the window
+Do method CopyProperties (pRefCalendar)
+
+;  we also size the calendar the same size
+Do method SizeCalendar (pRefCalendar)
+
+Do $cinst.$printrecord()
+Do $cinst.$endprint()
+Quit method

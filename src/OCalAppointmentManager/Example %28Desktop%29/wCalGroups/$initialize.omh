@@ -1,0 +1,16 @@
+;  initialize the groups sub-window
+Set reference refCalendar to $cwind.$getCalendar
+
+;  Build a sample list of groups
+Do iGroupList.$define(iGroupName,iGroupColor,iGroupTextColor,iGroupVis)
+Do iGroupList.$add("Group One",rgb(221,255,255),kBlack,kTrue)
+Do iGroupList.$add("Group Two",rgb(255,221,255),kBlack,kTrue)
+Do iGroupList.$add("Group Three",rgb(255,255,221),kBlack,kTrue)
+Do iGroupList.$add("Group Four",rgb(221,221,255),kBlack,kTrue)
+Do iGroupList.$add("Group Five",rgb(255,221,221),kBlack,kTrue)
+Do iGroupList.$add("Group Six",rgb(221,255,221),kDarkGreen,kTrue)
+Do iGroupList.$add("Group Seven",rgb(221,221,221),kBlack,kTrue)
+Calculate iGroupList.$line as 1
+Do $cinst.$objs.GroupList.$setExceptions
+
+Do method groupVisChanged     ;; this will sync the main calendar's layers with our list

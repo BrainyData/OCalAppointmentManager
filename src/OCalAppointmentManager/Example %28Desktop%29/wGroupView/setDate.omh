@@ -1,0 +1,10 @@
+
+;  store our date in instance var
+Calculate iDate as pDate
+
+;  assign the given date to all our controls
+;  we must assign both $currday and $dayviewdate
+Do $cinst.$objs.$sendall($ref.$currday.$assign(pDate)+$ref.$dayviewdate.$assign(pDate),$ref.$componentctrl="Calendar Control")
+
+;  redraw the date in the title
+Do $cinst.$bobjs.1025.$redraw()

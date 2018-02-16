@@ -1,0 +1,9 @@
+Switch sys(6)
+	Case 'W','N','X'
+		
+	Default
+		;  for other platforms disable the last menu items
+		Calculate $cinst.$objs.Order.$enabled as kFalse
+		Calculate $cinst.$objs.Contact.$enabled as kFalse
+		Calculate $cinst.$objs.Website.$enabled as kFalse
+End Switch

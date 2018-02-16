@@ -1,0 +1,10 @@
+Switch sys(6)
+	Case 'W','N'
+		Register DLL ("Shell32.dll","ShellExecuteA","JJCCCCJ") Returns errorCode
+		If not(errorCode)
+			Call DLL ("Shell32.dll","ShellExecuteA",0,"#NULL#",pTheURL,"#NULL#","#NULL#",1)
+		End If
+	Case 'X'
+		Calculate applescript as con('property target_URL : "',pTheURL,'"',kCr,'open location target_URL')
+		Do $runapplescript(applescript,results)
+End Switch

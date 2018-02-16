@@ -1,0 +1,2 @@
+On evRowChange
+	Do method $setExceptions

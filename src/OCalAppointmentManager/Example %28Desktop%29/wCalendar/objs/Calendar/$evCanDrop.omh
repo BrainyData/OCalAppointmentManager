@@ -1,0 +1,7 @@
+;  we allow drops only from this
+If pDragField().$name='Calendar'
+	Quit event handler (Pass to next handler)
+Else
+	;  deal with drags from other sources
+	Quit event handler (Discard event)
+End If

@@ -1,0 +1,12 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	If tvIsStudio4
+		Do $windows.wCalOptions.$openonce("*",kWindowCenterRelative,$cwind,refCalendar)
+		;  Open window instance wCalOptions/CEN ($cinst.$objs.Calendar)
+	Else
+		Test for window open {wCalOptions}
+		If flag true
+			Bring window instance to front wCalOptions
+		Else
+			Open window instance wCalOptions/CEN
+		End If
+	End If

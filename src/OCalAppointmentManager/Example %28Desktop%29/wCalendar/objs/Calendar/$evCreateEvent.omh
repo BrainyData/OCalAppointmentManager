@@ -1,0 +1,4 @@
+
+;  user did click&drag on day view background to create an event
+;  NOTE: start date may be greater than end date if user dragged in reverse
+Do $cwind.$createNewEvent(pStartDate,pEndDate,pAllDay)     ;; let our parent window handle it

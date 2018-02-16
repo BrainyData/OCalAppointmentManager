@@ -1,0 +1,8 @@
+
+Do Calendar Library.$disablescreenupdates()
+
+Do iSourceCal.$evDeleteEvent()
+Do method redrawAll
+Do method setAllDayHeight
+
+Do Calendar Library.$enablescreenupdates()

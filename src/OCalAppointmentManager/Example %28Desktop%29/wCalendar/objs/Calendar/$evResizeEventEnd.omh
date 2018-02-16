@@ -1,0 +1,3 @@
+;  event's end date/time has been changed
+Do method $setEventEndDateTime (pDropDate,kFalse,kTrue)
+Do method updateEventFields

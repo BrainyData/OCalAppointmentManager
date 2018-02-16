@@ -1,0 +1,10 @@
+On evClick     ;; Event Parameters - pRow( Itemreference )
+	Do method clearEventFields
+	Calculate iCurrView as "DayPlan"
+	Calculate refCalendar.$dayviewdaycount as iDaysInDayPlanView
+	;  Calculate refCalendar.$dayviewdate as #NULL
+	Calculate refCalendar.$shortname as kTrue
+	Calculate refCalendar.$viewmode as kCalViewModeDayNormal     ;; CHANGE_2014_04_16__1
+	Calculate refCalendar.$dayviewdate as #NULL     ;; CHANGE_2014_06_23__1 - must be set after assigning the view mode
+	Calculate refCalendar.$titledateformat as "n y"     ;; CHANGE_2014_06_23__1 - show appropriate date in title
+	Do method setButtons

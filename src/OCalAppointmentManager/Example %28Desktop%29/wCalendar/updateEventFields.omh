@@ -1,0 +1,19 @@
+If iEventsList.$line
+	Do method $getEventText Returns iEvText
+	Do method $getEventStartDateTime Returns iEvDateStart
+	Do method $getEventEndDateTime Returns iEvDateEnd
+	Do method $getEventTooltip Returns iEvTooltip
+	Do method $getEventAllDay Returns iEvAllDay
+	
+	Enable fields {iEvText,iEvDateStart,iEvDateEnd,iEvAllDay,iEvTooltip}
+	Redraw (Refresh now) {iEvText,iEvDateStart,iEvDateEnd,iEvAllDay,iEvTooltip}
+Else
+	Calculate iEvText as ''
+	Calculate iEvDateStart as ''
+	Calculate iEvDateEnd as ''
+	Calculate iEvTooltip as ''
+	Calculate iEvAllDay as kFalse
+	
+	Disable fields {iEvText,iEvDateStart,iEvDateEnd,iEvTooltip,iEvAllDay}
+	Redraw (Refresh now) {iEvText,iEvDateStart,iEvDateEnd,iEvTooltip}
+End If

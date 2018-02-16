@@ -1,0 +1,5 @@
+Calculate iDaysInDayPlanView as pDays
+If iCurrView="DayPlan"
+	Calculate refCalendar.$dayviewdaycount as iDaysInDayPlanView
+	;  Calculate iFRefCalendar.$dayviewdate as #NULL
+End If

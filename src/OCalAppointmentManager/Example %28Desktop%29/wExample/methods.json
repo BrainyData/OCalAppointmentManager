@@ -1,0 +1,404 @@
+[
+	{
+		"name": "$--- initialization ---",
+		"ident": 7,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$construct",
+		"ident": 1,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 2,
+		"order": 3,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getCalendar",
+		"ident": 5,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getSmallMonths",
+		"ident": 13,
+		"order": 5,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$buildEventsList",
+		"ident": 8,
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "pCalendar",
+				"order": 10,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pList",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "EvDateEnd",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "EvDateStart",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 0
+			},
+			{
+				"name": "EvFillColor",
+				"order": 6,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "EvIconID",
+				"order": 7,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "EvLayers",
+				"order": 9,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "EvText",
+				"order": 4,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "EvTextColor",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "EvTooltipText",
+				"order": 8,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "fCol",
+				"order": 11,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "tCol",
+				"order": 12,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$buildHolidayList",
+		"ident": 10,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pCalendar",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pList",
+				"order": 2,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "Date",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "FillColor",
+				"order": 4,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "rgb(187,255,255)"
+			},
+			{
+				"name": "Text",
+				"order": 6,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "TextColor",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"initval": "rgb(128,0,0)"
+			}
+		]
+	},
+	{
+		"name": "$testSeperateDateTimeFields",
+		"ident": 9,
+		"order": 8,
+		"pvardefs": [
+			{
+				"name": "pCalendar",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pList",
+				"order": 2,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "date",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "end_time",
+				"order": 5,
+				"type": "kDate",
+				"subtype": "kTime",
+				"sublen": 0
+			},
+			{
+				"name": "start_time",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kTime",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "$--- menu/interface support ---",
+		"ident": 6,
+		"order": 9,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$setGroup",
+		"ident": 12,
+		"order": 10,
+		"pvardefs": [
+			{
+				"name": "pGroupNumber",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getGroupInfo",
+		"ident": 11,
+		"order": 11,
+		"pvardefs": [
+			{
+				"name": "pGroupNumber",
+				"order": 5,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			},
+			{
+				"name": "pOutName",
+				"order": 1,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 2
+			},
+			{
+				"name": "pOutFillColor",
+				"order": 2,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			},
+			{
+				"name": "pOutTextColor",
+				"order": 3,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 4
+			},
+			{
+				"name": "pOutLayer",
+				"order": 4,
+				"type": "kFieldreference",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 5
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$createNewEvent",
+		"ident": 0,
+		"order": 12,
+		"pvardefs": [
+			{
+				"name": "pStartDate",
+				"order": 1,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 1
+			},
+			{
+				"name": "pEndDate",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6,
+				"param": 2,
+				"initval": "#NULL"
+			},
+			{
+				"name": "pAllDay",
+				"order": 3,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 3
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "tmp",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 6
+			}
+		]
+	},
+	{
+		"name": "$deleteEvent",
+		"ident": 4,
+		"order": 13,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setIcon",
+		"ident": 3,
+		"order": 14,
+		"pvardefs": [
+			{
+				"name": "pIcon",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

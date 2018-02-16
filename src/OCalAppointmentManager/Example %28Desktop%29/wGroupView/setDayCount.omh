@@ -1,0 +1,5 @@
+If pCount=1
+	Do $cinst.$objs.$sendall($ref.$showheading.$assign(kFalse)+$ref.$dayviewdaycount.$assign(1)+$ref.$dayviewdate.$assign(iDate),$ref.$componentctrl="Calendar Control")
+Else
+	Do $cinst.$objs.$sendall($ref.$showheading.$assign(kTrue)+$ref.$dayviewdaycount.$assign(7)+$ref.$dayviewdate.$assign(#NULL),$ref.$componentctrl="Calendar Control")
+End If

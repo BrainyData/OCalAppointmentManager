@@ -1,0 +1,27 @@
+{
+	"ident": 1090,
+	"order": 16415,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kRightJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 6,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 17,
+		"left": 341,
+		"objlink": 0,
+		"text": "Extra margin (pixels):",
+		"textcolor": "kColorWindowText",
+		"top": 105,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 179
+	}
+}

@@ -1,0 +1,18 @@
+Calculate btnViewList.$enabled as iCurrView<>"List"     ;; CHANGE_2014_04_16__1 new button
+Calculate btnViewDay.$enabled as iCurrView<>"Day"
+Calculate btnViewWeek.$enabled as iCurrView<>"Week"
+Calculate btnViewFortnight.$enabled as iCurrView<>"Fortnight"
+Calculate btnViewDayPlan.$enabled as iCurrView<>"DayPlan"
+Calculate btnViewMonth.$enabled as iCurrView<>"Month"
+Calculate btnViewYear.$enabled as iCurrView<>"Year"
+
+;  CHANGE_18JUN2013_1
+If iCurrView="Month"
+	;  in month view show first and last visible dates in our spacer
+	Do refCalendar.$getFirstLastDaysInMonthView(first,last)
+	Do method showMessage (con(first," - ",last))
+Else If iCurrView="Year"
+	Do method showMessage ("Double-click to inspect day")     ;; CHANGE_2014_06_18__1
+Else
+	Do method showMessage ("Double-click to open Group Window")     ;; CHANGE_2014_04_17__1
+End If

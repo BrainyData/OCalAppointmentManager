@@ -1,0 +1,14 @@
+If len(pColumnName)
+	If pSelected
+		For ln from 1 to iEventsList.$linecount step 1
+			If iEventsList.[ln].$selected
+				Calculate iEventsList.[ln].[pColumnName] as pValue
+			End If
+		End For
+	Else
+		Calculate iEventsList.[iEventsList.$line].[pColumnName] as pValue
+	End If
+	If pRedraw
+		Do refCalendar.$redraw()
+	End If
+End If

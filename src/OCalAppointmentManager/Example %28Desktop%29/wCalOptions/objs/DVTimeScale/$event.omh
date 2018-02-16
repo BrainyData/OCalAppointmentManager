@@ -1,0 +1,2 @@
+On evNewValue
+	Calculate refCalendar.$dayviewtimescale as pNewVal*5     ;; our slider operates in multiples of 5

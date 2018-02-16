@@ -1,0 +1,20 @@
+;  20090608_CHANGE     ;; simplified event handling for all three controls
+
+;  CHANGE_2015_15_05__1     ;; digest changes: changed current day indicator from background fill to border
+Calculate refCal1.$currdaymode as kBorderNone
+Calculate refCal1.$currdaycolor as kWhite
+
+Calculate refCal2.$currdaymode as kBorderNone
+Calculate refCal2.$currdaycolor as kWhite
+
+Calculate refCal3.$currdaymode as kBorderNone
+Calculate refCal3.$currdaycolor as kWhite
+
+Calculate $cobj.$currdaymode as kBorderInset
+Calculate $cobj.$currdaycolor as rgb(221,221,221)
+
+If refCalendar
+	Calculate refCalendar.$currday as pDate
+	Calculate refCalendar.$dayviewdate as #NULL     ;; reset day view
+	Do refCalendar.$evDateChanged(pDate,kFalse,kFalse)     ;; CHANGE_18JUN2013_1
+End If

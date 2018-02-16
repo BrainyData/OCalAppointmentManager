@@ -1,0 +1,3 @@
+;  event's start date/time has been changed
+Do method $setEventStartDateTime (pDropDate,kFalse,kTrue)
+Do method updateEventFields

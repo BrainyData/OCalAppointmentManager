@@ -1,0 +1,18 @@
+;  update our three controls
+Calculate ivLastDate as pDate
+Calculate $cinst.$objs.Cal2.$currday as pDate
+Calculate pDate as dadd(kDay,1-dpart(kDay,pDate),pDate)
+Calculate pDate as dadd(kMonth,-1,pDate)
+Calculate $cinst.$objs.Cal1.$currday as pDate
+Calculate pDate as dadd(kMonth,2,pDate)
+Calculate $cinst.$objs.Cal3.$currday as pDate
+
+;  CHANGE_2015_15_05__1     ;; digest changes: changed current day indicator from background fill to border
+Calculate refCal1.$currdaymode as kBorderNone
+Calculate refCal1.$currdaycolor as kWhite
+
+Calculate refCal2.$currdaymode as kBorderInset
+Calculate refCal2.$currdaycolor as rgb(221,221,221)
+
+Calculate refCal3.$currdaymode as kBorderNone
+Calculate refCal3.$currdaycolor as kWhite

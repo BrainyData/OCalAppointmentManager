@@ -1,0 +1,5 @@
+If pShow
+	Calculate refCalendar.$columnicon as iColumnIcon
+Else
+	Calculate refCalendar.$columnicon as ''
+End If

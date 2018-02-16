@@ -1,0 +1,18 @@
+
+Do Calendar Library.$disablescreenupdates()
+
+;  dragging and dropping in our window may change the group an event belongs to
+If pFieldRef().$name<>pDragField().$name
+	;  we must change the group
+	Do iSourceWin.$getGroupInfo(pFieldRef.$order,groupName,groupFillColor,groupTextColor,groupLayer)
+	;  we use the coulmn names from our calendar properties to assign the list columns
+	Do iSourceInst.$setEventFillColor(groupFillColor,kTrue,kFalse)
+	Do iSourceInst.$setEventTextColor(groupTextColor,kTrue,kFalse)
+	Do iSourceInst.$setEventLayers(groupLayer,kTrue,kFalse)
+End If
+;  now pass the actual drop event to our caller
+Do iSourceCal.$evDrop(iSourceCal,pDragType,pDragValue,pFieldRef.$dropdate,pFieldRef.$dropallday)
+Do method redrawAll
+Do method setAllDayHeight
+
+Do Calendar Library.$enablescreenupdates()

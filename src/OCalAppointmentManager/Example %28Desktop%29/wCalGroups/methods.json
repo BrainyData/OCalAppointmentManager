@@ -1,0 +1,171 @@
+[
+	{
+		"name": "$--- initialization ---",
+		"ident": 5,
+		"order": 1,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$initialize",
+		"ident": 8,
+		"order": 2,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setGroup",
+		"ident": 1,
+		"order": 3,
+		"pvardefs": [
+			{
+				"name": "pGroupNumber",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$--- group property getting ---",
+		"ident": 9,
+		"order": 4,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "$getGroupFillColor",
+		"ident": 0,
+		"order": 5,
+		"pvardefs": [
+			{
+				"name": "pLine",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1,
+				"initval": "iGroupList.$line",
+				"desc": "If zero use current line"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getGroupTextColor",
+		"ident": 6,
+		"order": 6,
+		"pvardefs": [
+			{
+				"name": "pLine",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1,
+				"initval": "iGroupList.$line",
+				"desc": "If zero use current line"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getGroupLayer",
+		"ident": 3,
+		"order": 7,
+		"pvardefs": [
+			{
+				"name": "pLine",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1,
+				"initval": "iGroupList.$line",
+				"desc": "If zero use current line"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$getGroupName",
+		"ident": 4,
+		"order": 8,
+		"pvardefs": [
+			{
+				"name": "pLine",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0,
+				"param": 1,
+				"initval": "iGroupList.$line",
+				"desc": "If zero use current line"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "--- private ---",
+		"ident": 10,
+		"order": 9,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	},
+	{
+		"name": "groupVisChanged",
+		"ident": 7,
+		"order": 10,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "layers",
+				"order": 2,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "ln",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			}
+		]
+	}
+]

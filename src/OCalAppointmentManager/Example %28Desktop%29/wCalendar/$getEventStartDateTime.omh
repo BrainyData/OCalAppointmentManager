@@ -1,0 +1,7 @@
+If len(refCalendar.$columntime)>0&refCalendar.$columndate<>refCalendar.$columntime
+	;  combine seperate date and time columns
+	Quit method con(dat($cinst.$getEventItem(refCalendar.$columndate),#FD),' ',tim($cinst.$getEventItem(refCalendar.$columntime),#FT))
+Else
+	;  date and time columns are the same
+	Quit method $cinst.$getEventItem(refCalendar.$columndate)
+End If

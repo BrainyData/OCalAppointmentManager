@@ -1,0 +1,16 @@
+
+For ln from 1 to iGroupList.$linecount step 1
+	If ln=iGroupList.$line
+		Calculate $cfield.$bobjs.[1018].[ln].$effect as kBorderSingleInset
+		Calculate $cfield.$objs.btnGroupVis.[ln].$backcolor as iGroupList.[ln].iGroupColor-rgb(32,32,32)-rgb(32,32,32)
+		Calculate $cfield.$objs.iGroupName.[ln].$backcolor as iGroupList.[ln].iGroupColor-rgb(32,32,32)-rgb(32,32,32)
+		Calculate $cfield.$objs.iGroupName.[ln].$textcolor as iGroupList.[ln].iGroupTextColor
+		Calculate $cfield.$objs.iGroupName.[ln].$enabled as kTrue
+	Else
+		Calculate $cfield.$bobjs.[1018].[ln].$effect as kBorderSingleEmbossed
+		Calculate $cfield.$objs.btnGroupVis.[ln].$backcolor as iGroupList.[ln].iGroupColor
+		Calculate $cfield.$objs.iGroupName.[ln].$backcolor as iGroupList.[ln].iGroupColor
+		Calculate $cfield.$objs.iGroupName.[ln].$textcolor as iGroupList.[ln].iGroupTextColor
+		Calculate $cfield.$objs.iGroupName.[ln].$enabled as kFalse
+	End If
+End For

@@ -1,0 +1,1 @@
+Do $cinst.$objs.$sendall($ref.$contents.$assign(refCalendar.$[mid($ref().$name,10,255)]),pos("btnColor_",$ref().$name)=1)

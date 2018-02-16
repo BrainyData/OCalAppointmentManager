@@ -1,0 +1,27 @@
+{
+	"ident": 1028,
+	"order": 16388,
+	"objtype": "kLabel",
+	"properties": {
+		"align": "kRightJst",
+		"backcolor": "kColorBackFill",
+		"backpattern": 15,
+		"designactive": true,
+		"edgefloat": "kEFnone",
+		"fieldstyle": "CtrlLabel",
+		"font": 6,
+		"fontsize": 0,
+		"fontstyle": "kPlain",
+		"forecolor": "kColorForeFill",
+		"height": 17,
+		"left": 122,
+		"objlink": 0,
+		"text": "Day/event font size:",
+		"textcolor": "kColorWindowText",
+		"top": 459,
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true,
+		"width": 133
+	}
+}

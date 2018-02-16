@@ -1,0 +1,8 @@
+;  click on a calendar day background, pCurrentDate = date & time clicked on
+If pUpdateSmallMonths     ;; CHANGE_18JUN2013_1
+	Do $cwind.$getSmallMonths Returns refSmallMonths
+	Do refSmallMonths.$setDate(pCurrentDate)
+End If
+Do method updateEventFields
+Do method showMessage ("Double-click to open Group Window")
+Do method setButtons     ;; CHANGE_18JUN2013_1

@@ -1,0 +1,106 @@
+;  copy display properties from window object to report object
+;  so that the print out looks itendical to the calendar on the window
+
+;       ;; basic appearance properties
+Calculate refCalendar.$ampmstring as pRefCalendar.$ampmstring
+
+Calculate refCalendar.$currdaycolor as pRefCalendar.$currdaycolor
+Calculate refCalendar.$currdayborder as pRefCalendar.$currdayborder
+Calculate refCalendar.$currdaytextcolor as pRefCalendar.$currdaytextcolor
+
+Calculate refCalendar.$daycolor as pRefCalendar.$daycolor
+Calculate refCalendar.$dayfont as pRefCalendar.$dayfont
+Calculate refCalendar.$dayfontsize as pRefCalendar.$dayfontsize
+Calculate refCalendar.$dayborder as pRefCalendar.$dayborder
+
+Calculate refCalendar.$otherdaycolor as pRefCalendar.$otherdaycolor
+Calculate refCalendar.$otherdayborder as pRefCalendar.$otherdayborder
+Calculate refCalendar.$othertextcolor as pRefCalendar.$othertextcolor
+
+Calculate refCalendar.$todaybold as pRefCalendar.$todaybold
+Calculate refCalendar.$todayscolor as pRefCalendar.$todayscolor
+Calculate refCalendar.$todaystextcolor as pRefCalendar.$todaystextcolor
+
+Calculate refCalendar.$headingbold as pRefCalendar.$headingbold
+Calculate refCalendar.$headingcolor as pRefCalendar.$headingcolor
+Calculate refCalendar.$headingfont as pRefCalendar.$headingfont
+Calculate refCalendar.$headingfontsize as pRefCalendar.$headingfontsize
+Calculate refCalendar.$headingborder as pRefCalendar.$headingborder
+Calculate refCalendar.$headingtextcolor as pRefCalendar.$headingtextcolor
+
+Calculate refCalendar.$titlebold as pRefCalendar.$titlebold
+Calculate refCalendar.$titlecolor as pRefCalendar.$titlecolor
+Calculate refCalendar.$titlefont as pRefCalendar.$titlefont
+Calculate refCalendar.$titlefontsize as pRefCalendar.$titlefontsize
+Calculate refCalendar.$titleborder as pRefCalendar.$titleborder
+Calculate refCalendar.$titletextcolor as pRefCalendar.$titletextcolor
+Calculate refCalendar.$titledateformat as pRefCalendar.$titledateformat
+Calculate refCalendar.$titletext as pRefCalendar.$titletext
+
+Calculate refCalendar.$weekendcolor as pRefCalendar.$weekendcolor
+Calculate refCalendar.$weekenddays as pRefCalendar.$weekenddays
+Calculate refCalendar.$weekendtextcolor as pRefCalendar.$weekendtextcolor
+
+Calculate refCalendar.$monthtextcolor as pRefCalendar.$monthtextcolor
+
+Calculate refCalendar.$firstday as pRefCalendar.$firstday
+Calculate refCalendar.$shortname as pRefCalendar.$shortname
+Calculate refCalendar.$showheading as pRefCalendar.$showheading
+
+Calculate refCalendar.$downarrowid as pRefCalendar.$downarrowid
+Calculate refCalendar.$uparrowid as pRefCalendar.$uparrowid
+
+Calculate refCalendar.$fieldstyle as pRefCalendar.$fieldstyle
+Calculate refCalendar.$headingstyle as pRefCalendar.$headingstyle
+Calculate refCalendar.$titlestyle as pRefCalendar.$titlestyle
+
+;       ;; event list properties
+Calculate refCalendar.$columnbackcolor as pRefCalendar.$columnbackcolor
+Calculate refCalendar.$columndate as pRefCalendar.$columndate
+Calculate refCalendar.$columntime as pRefCalendar.$columntime
+Calculate refCalendar.$columnenddate as pRefCalendar.$columnenddate
+Calculate refCalendar.$columnendtime as pRefCalendar.$columnendtime
+Calculate refCalendar.$columnallday as pRefCalendar.$columnallday     ;; CHANGE_ALL_DAY
+Calculate refCalendar.$columnicon as pRefCalendar.$columnicon
+Calculate refCalendar.$columnlayers as pRefCalendar.$columnlayers
+Calculate refCalendar.$columntext as pRefCalendar.$columntext
+Calculate refCalendar.$::columntextcolor as pRefCalendar.$::columntextcolor
+Calculate refCalendar.$columntooltip as pRefCalendar.$columntooltip
+Calculate refCalendar.$layers as pRefCalendar.$layers
+Calculate refCalendar.$noeventbackground as pRefCalendar.$noeventbackground
+Calculate refCalendar.$noeventborder as pRefCalendar.$noeventborder     ;; CHANGE_BORDER
+Calculate refCalendar.$roundedboxes as pRefCalendar.$roundedboxes
+
+Calculate refCalendar.$eventslist as "ivEventsList"     ;; list of events (Instance variable of report)
+Calculate refCalendar.$holidaylist as pRefCalendar.$holidaylist     ;; CHANGE_20130215_1
+
+;       ;; dayview properties
+Calculate refCalendar.$dayviewdaycount as pRefCalendar.$dayviewdaycount
+Calculate refCalendar.$dayviewdayend as pRefCalendar.$dayviewdayend
+Calculate refCalendar.$dayviewdaystart as pRefCalendar.$dayviewdaystart
+Calculate refCalendar.$dayviewhoursvisible as pRefCalendar.$dayviewhoursvisible
+Calculate refCalendar.$dayviewmineventwidth as pRefCalendar.$dayviewmineventwidth
+Calculate refCalendar.$dayviewminutescale as pRefCalendar.$dayviewminutescale
+Calculate refCalendar.$dayviewsnapminutes as pRefCalendar.$dayviewsnapminutes
+Calculate refCalendar.$dayviewtimescale as pRefCalendar.$dayviewtimescale
+
+Calculate refCalendar.$dayviewtimecolumncolor as pRefCalendar.$dayviewtimecolumncolor     ;; CHANGE_ALL_DAY
+Calculate refCalendar.$dayviewdeadcolumncolor as pRefCalendar.$dayviewdeadcolumncolor     ;; CHANGE_ALL_DAY
+Calculate refCalendar.$dayviewdividercolor as pRefCalendar.$dayviewdividercolor     ;; CHANGE_ALL_DAY
+
+Calculate refCalendar.$dayviewvposminutes as pRefCalendar.$dayviewvposminutes
+Calculate refCalendar.$viewmode as pRefCalendar.$viewmode     ;; CHANGE_2014_04_16__1
+
+
+
+
+
+;  CHANGE_2009_09_07_1     ;; Work-around: Moved date assignments here. Assigning $dayviewdate when printing month view was causing issues.
+;       ;; date related properties
+Calculate refCalendar.$currday as pRefCalendar.$currday
+If refCalendar.$viewmode<>kCalViewModeMonth     ;; CHANGE_2014_04_16__1
+	Calculate refCalendar.$templatedayview as pRefCalendar.$templatedayview
+	Calculate refCalendar.$dayviewdate as pRefCalendar.$dayviewdate
+Else
+	Calculate refCalendar.$dayviewdate as #NULL
+End If
